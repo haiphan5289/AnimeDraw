@@ -1,0 +1,6 @@
+framework module Pods_AnimeDraw_AnimeDrawUITests {
+  umbrella header "Pods-AnimeDraw-AnimeDrawUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

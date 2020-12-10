@@ -1,0 +1,953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05ECAC263209F8233DD4DDA5 /* Pods_AnimeDraw_AnimeDrawUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375CF7F72C1BE34C71D51CB5 /* Pods_AnimeDraw_AnimeDrawUITests.framework */; };
+		2C6253979ADDFB4D3BFAB4DB /* Pods_AnimeDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F024C3140C9F72BE9063FF /* Pods_AnimeDraw.framework */; };
+		93696FB42580F61E00BFDFB6 /* Aang from Avatar.json in Resources */ = {isa = PBXBuildFile; fileRef = 93696FB32580F61E00BFDFB6 /* Aang from Avatar.json */; };
+		93696FB92580F68A00BFDFB6 /* Anime boy.json in Resources */ = {isa = PBXBuildFile; fileRef = 93696FB82580F68A00BFDFB6 /* Anime boy.json */; };
+		936E2CB825826302003B634F /* How to Draw Male Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CAC25826300003B634F /* How to Draw Male Eyes.json */; };
+		936E2CB925826302003B634F /* How to Draw Sharp Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CAD25826300003B634F /* How to Draw Sharp Eyes.json */; };
+		936E2CBA25826302003B634F /* How to Draw Various Facial Expressions.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CAE25826300003B634F /* How to Draw Various Facial Expressions.json */; };
+		936E2CBB25826302003B634F /* How to Draw Female Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CAF25826300003B634F /* How to Draw Female Eyes.json */; };
+		936E2CBC25826302003B634F /* How to Draw Female Body.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CB025826301003B634F /* How to Draw Female Body.json */; };
+		936E2CBD25826302003B634F /* How to Draw Round Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CB125826301003B634F /* How to Draw Round Eyes.json */; };
+		936E2CBE25826302003B634F /* How to Draw Clothes.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CB225826301003B634F /* How to Draw Clothes.json */; };
+		936E2CBF25826302003B634F /* How to Draw Chibi.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CB325826301003B634F /* How to Draw Chibi.json */; };
+		936E2CC025826302003B634F /* Ichigo Kurosaki Bankai.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CB425826301003B634F /* Ichigo Kurosaki Bankai.json */; };
+		936E2CC125826302003B634F /* How to Draw Male Body.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CB525826301003B634F /* How to Draw Male Body.json */; };
+		936E2CC225826302003B634F /* How to Draw Hair.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CB625826302003B634F /* How to Draw Hair.json */; };
+		936E2CC325826302003B634F /* How to Draw Nose and Mouth.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CB725826302003B634F /* How to Draw Nose and Mouth.json */; };
+		936E2CC825826549003B634F /* Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CC725826549003B634F /* Sample.json */; };
+		9371E6CA257BA8EE00F0A54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E6C9257BA8EE00F0A54F /* AppDelegate.swift */; };
+		9371E6CC257BA8EE00F0A54F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E6CB257BA8EE00F0A54F /* SceneDelegate.swift */; };
+		9371E6CE257BA8EE00F0A54F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E6CD257BA8EE00F0A54F /* ViewController.swift */; };
+		9371E6D1257BA8EE00F0A54F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9371E6CF257BA8EE00F0A54F /* Main.storyboard */; };
+		9371E6D4257BA8EE00F0A54F /* AnimeDraw.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9371E6D2257BA8EE00F0A54F /* AnimeDraw.xcdatamodeld */; };
+		9371E6D6257BA8F000F0A54F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9371E6D5257BA8F000F0A54F /* Assets.xcassets */; };
+		9371E6D9257BA8F000F0A54F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9371E6D7257BA8F000F0A54F /* LaunchScreen.storyboard */; };
+		9371E6E4257BA8F000F0A54F /* AnimeDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E6E3257BA8F000F0A54F /* AnimeDrawTests.swift */; };
+		9371E6EF257BA8F000F0A54F /* AnimeDrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E6EE257BA8F000F0A54F /* AnimeDrawUITests.swift */; };
+		9371E749257BAD6800F0A54F /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E748257BAD6800F0A54F /* ViewController+Extension.swift */; };
+		9371E74E257BAD9300F0A54F /* HomeTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E74D257BAD9300F0A54F /* HomeTabbar.swift */; };
+		9371E755257BAE2F00F0A54F /* StepByStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E753257BAE2F00F0A54F /* StepByStepVC.swift */; };
+		9371E760257BAE5900F0A54F /* TutorialsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E75E257BAE5900F0A54F /* TutorialsVC.swift */; };
+		9371E761257BAE5900F0A54F /* TutorialsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9371E75F257BAE5900F0A54F /* TutorialsVC.xib */; };
+		9371E76B257BAE7400F0A54F /* BookMarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E769257BAE7400F0A54F /* BookMarks.swift */; };
+		9371E76C257BAE7400F0A54F /* BookMarks.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9371E76A257BAE7400F0A54F /* BookMarks.xib */; };
+		9371E776257BB50D00F0A54F /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E774257BB50D00F0A54F /* StepCell.swift */; };
+		9371E777257BB50D00F0A54F /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9371E775257BB50D00F0A54F /* StepCell.xib */; };
+		D9214865F80662E7698A8DA0 /* Pods_AnimeDrawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460D95E6532D470AF4DBA370 /* Pods_AnimeDrawTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9371E6E0257BA8F000F0A54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9371E6BE257BA8EE00F0A54F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9371E6C5257BA8EE00F0A54F;
+			remoteInfo = AnimeDraw;
+		};
+		9371E6EB257BA8F000F0A54F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9371E6BE257BA8EE00F0A54F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9371E6C5257BA8EE00F0A54F;
+			remoteInfo = AnimeDraw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03EF893E023C7704E923A133 /* Pods-AnimeDraw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDraw.debug.xcconfig"; path = "Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw.debug.xcconfig"; sourceTree = "<group>"; };
+		289A5361AF2796B54835FE39 /* Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig"; path = "Target Support Files/Pods-AnimeDraw-AnimeDrawUITests/Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		375CF7F72C1BE34C71D51CB5 /* Pods_AnimeDraw_AnimeDrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeDraw_AnimeDrawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		460D95E6532D470AF4DBA370 /* Pods_AnimeDrawTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeDrawTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F024C3140C9F72BE9063FF /* Pods_AnimeDraw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeDraw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		673A40C71EF74BE33A0BA460 /* Pods-AnimeDrawTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDrawTests.debug.xcconfig"; path = "Target Support Files/Pods-AnimeDrawTests/Pods-AnimeDrawTests.debug.xcconfig"; sourceTree = "<group>"; };
+		93696FB32580F61E00BFDFB6 /* Aang from Avatar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Aang from Avatar.json"; sourceTree = "<group>"; };
+		93696FB82580F68A00BFDFB6 /* Anime boy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Anime boy.json"; sourceTree = "<group>"; };
+		936E2CAC25826300003B634F /* How to Draw Male Eyes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Male Eyes.json"; sourceTree = "<group>"; };
+		936E2CAD25826300003B634F /* How to Draw Sharp Eyes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Sharp Eyes.json"; sourceTree = "<group>"; };
+		936E2CAE25826300003B634F /* How to Draw Various Facial Expressions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Various Facial Expressions.json"; sourceTree = "<group>"; };
+		936E2CAF25826300003B634F /* How to Draw Female Eyes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Female Eyes.json"; sourceTree = "<group>"; };
+		936E2CB025826301003B634F /* How to Draw Female Body.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Female Body.json"; sourceTree = "<group>"; };
+		936E2CB125826301003B634F /* How to Draw Round Eyes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Round Eyes.json"; sourceTree = "<group>"; };
+		936E2CB225826301003B634F /* How to Draw Clothes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Clothes.json"; sourceTree = "<group>"; };
+		936E2CB325826301003B634F /* How to Draw Chibi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Chibi.json"; sourceTree = "<group>"; };
+		936E2CB425826301003B634F /* Ichigo Kurosaki Bankai.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Ichigo Kurosaki Bankai.json"; sourceTree = "<group>"; };
+		936E2CB525826301003B634F /* How to Draw Male Body.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Male Body.json"; sourceTree = "<group>"; };
+		936E2CB625826302003B634F /* How to Draw Hair.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Hair.json"; sourceTree = "<group>"; };
+		936E2CB725826302003B634F /* How to Draw Nose and Mouth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Nose and Mouth.json"; sourceTree = "<group>"; };
+		936E2CC725826549003B634F /* Sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sample.json; sourceTree = "<group>"; };
+		9371E6C6257BA8EE00F0A54F /* AnimeDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimeDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9371E6C9257BA8EE00F0A54F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9371E6CB257BA8EE00F0A54F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9371E6CD257BA8EE00F0A54F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9371E6D0257BA8EE00F0A54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9371E6D3257BA8EE00F0A54F /* AnimeDraw.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnimeDraw.xcdatamodel; sourceTree = "<group>"; };
+		9371E6D5257BA8F000F0A54F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9371E6D8257BA8F000F0A54F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9371E6DA257BA8F000F0A54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9371E6DF257BA8F000F0A54F /* AnimeDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9371E6E3257BA8F000F0A54F /* AnimeDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDrawTests.swift; sourceTree = "<group>"; };
+		9371E6E5257BA8F000F0A54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9371E6EA257BA8F000F0A54F /* AnimeDrawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimeDrawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9371E6EE257BA8F000F0A54F /* AnimeDrawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDrawUITests.swift; sourceTree = "<group>"; };
+		9371E6F0257BA8F000F0A54F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9371E748257BAD6800F0A54F /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		9371E74D257BAD9300F0A54F /* HomeTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabbar.swift; sourceTree = "<group>"; };
+		9371E753257BAE2F00F0A54F /* StepByStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepVC.swift; sourceTree = "<group>"; };
+		9371E75E257BAE5900F0A54F /* TutorialsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsVC.swift; sourceTree = "<group>"; };
+		9371E75F257BAE5900F0A54F /* TutorialsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialsVC.xib; sourceTree = "<group>"; };
+		9371E769257BAE7400F0A54F /* BookMarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarks.swift; sourceTree = "<group>"; };
+		9371E76A257BAE7400F0A54F /* BookMarks.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookMarks.xib; sourceTree = "<group>"; };
+		9371E774257BB50D00F0A54F /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
+		9371E775257BB50D00F0A54F /* StepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepCell.xib; sourceTree = "<group>"; };
+		9940ABFA160C660F210F8515 /* Pods-AnimeDraw-AnimeDrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDraw-AnimeDrawUITests.release.xcconfig"; path = "Target Support Files/Pods-AnimeDraw-AnimeDrawUITests/Pods-AnimeDraw-AnimeDrawUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B92058FE3419317AF3ADAD49 /* Pods-AnimeDrawTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDrawTests.release.xcconfig"; path = "Target Support Files/Pods-AnimeDrawTests/Pods-AnimeDrawTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8A4756088CDBAC33BDF0D18 /* Pods-AnimeDraw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDraw.release.xcconfig"; path = "Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9371E6C3257BA8EE00F0A54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6253979ADDFB4D3BFAB4DB /* Pods_AnimeDraw.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9371E6DC257BA8F000F0A54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9214865F80662E7698A8DA0 /* Pods_AnimeDrawTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9371E6E7257BA8F000F0A54F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05ECAC263209F8233DD4DDA5 /* Pods_AnimeDraw_AnimeDrawUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4343032CFA6CFE9A5D532046 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03EF893E023C7704E923A133 /* Pods-AnimeDraw.debug.xcconfig */,
+				F8A4756088CDBAC33BDF0D18 /* Pods-AnimeDraw.release.xcconfig */,
+				289A5361AF2796B54835FE39 /* Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig */,
+				9940ABFA160C660F210F8515 /* Pods-AnimeDraw-AnimeDrawUITests.release.xcconfig */,
+				673A40C71EF74BE33A0BA460 /* Pods-AnimeDrawTests.debug.xcconfig */,
+				B92058FE3419317AF3ADAD49 /* Pods-AnimeDrawTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		93696FAF2580F60500BFDFB6 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				93696FB32580F61E00BFDFB6 /* Aang from Avatar.json */,
+				93696FB82580F68A00BFDFB6 /* Anime boy.json */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		936E2CAB258262F1003B634F /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				936E2CC725826549003B634F /* Sample.json */,
+				936E2CB325826301003B634F /* How to Draw Chibi.json */,
+				936E2CB225826301003B634F /* How to Draw Clothes.json */,
+				936E2CB025826301003B634F /* How to Draw Female Body.json */,
+				936E2CAF25826300003B634F /* How to Draw Female Eyes.json */,
+				936E2CB625826302003B634F /* How to Draw Hair.json */,
+				936E2CB525826301003B634F /* How to Draw Male Body.json */,
+				936E2CAC25826300003B634F /* How to Draw Male Eyes.json */,
+				936E2CB725826302003B634F /* How to Draw Nose and Mouth.json */,
+				936E2CB125826301003B634F /* How to Draw Round Eyes.json */,
+				936E2CAD25826300003B634F /* How to Draw Sharp Eyes.json */,
+				936E2CAE25826300003B634F /* How to Draw Various Facial Expressions.json */,
+				936E2CB425826301003B634F /* Ichigo Kurosaki Bankai.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		9371E6BD257BA8EE00F0A54F = {
+			isa = PBXGroup;
+			children = (
+				9371E6C8257BA8EE00F0A54F /* AnimeDraw */,
+				9371E6E2257BA8F000F0A54F /* AnimeDrawTests */,
+				9371E6ED257BA8F000F0A54F /* AnimeDrawUITests */,
+				9371E6C7257BA8EE00F0A54F /* Products */,
+				4343032CFA6CFE9A5D532046 /* Pods */,
+				C85BB7EEF06AB6A54E41CF06 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9371E6C7257BA8EE00F0A54F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9371E6C6257BA8EE00F0A54F /* AnimeDraw.app */,
+				9371E6DF257BA8F000F0A54F /* AnimeDrawTests.xctest */,
+				9371E6EA257BA8F000F0A54F /* AnimeDrawUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9371E6C8257BA8EE00F0A54F /* AnimeDraw */ = {
+			isa = PBXGroup;
+			children = (
+				936E2CAB258262F1003B634F /* JSON */,
+				93696FAF2580F60500BFDFB6 /* resource */,
+				9371E747257BAD4100F0A54F /* Extension */,
+				9371E745257BAD1A00F0A54F /* Modules */,
+				9371E6C9257BA8EE00F0A54F /* AppDelegate.swift */,
+				9371E6CB257BA8EE00F0A54F /* SceneDelegate.swift */,
+				9371E6CD257BA8EE00F0A54F /* ViewController.swift */,
+				9371E6CF257BA8EE00F0A54F /* Main.storyboard */,
+				9371E6D5257BA8F000F0A54F /* Assets.xcassets */,
+				9371E6D7257BA8F000F0A54F /* LaunchScreen.storyboard */,
+				9371E6DA257BA8F000F0A54F /* Info.plist */,
+				9371E6D2257BA8EE00F0A54F /* AnimeDraw.xcdatamodeld */,
+			);
+			path = AnimeDraw;
+			sourceTree = "<group>";
+		};
+		9371E6E2257BA8F000F0A54F /* AnimeDrawTests */ = {
+			isa = PBXGroup;
+			children = (
+				9371E6E3257BA8F000F0A54F /* AnimeDrawTests.swift */,
+				9371E6E5257BA8F000F0A54F /* Info.plist */,
+			);
+			path = AnimeDrawTests;
+			sourceTree = "<group>";
+		};
+		9371E6ED257BA8F000F0A54F /* AnimeDrawUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9371E6EE257BA8F000F0A54F /* AnimeDrawUITests.swift */,
+				9371E6F0257BA8F000F0A54F /* Info.plist */,
+			);
+			path = AnimeDrawUITests;
+			sourceTree = "<group>";
+		};
+		9371E745257BAD1A00F0A54F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9371E768257BAE6300F0A54F /* Bookmarks */,
+				9371E75D257BAE3C00F0A54F /* Tutorials */,
+				9371E752257BAE1900F0A54F /* StepByStep */,
+				9371E746257BAD2400F0A54F /* HomeTabbar */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9371E746257BAD2400F0A54F /* HomeTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				9371E74D257BAD9300F0A54F /* HomeTabbar.swift */,
+			);
+			path = HomeTabbar;
+			sourceTree = "<group>";
+		};
+		9371E747257BAD4100F0A54F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9371E748257BAD6800F0A54F /* ViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9371E752257BAE1900F0A54F /* StepByStep */ = {
+			isa = PBXGroup;
+			children = (
+				9371E773257BB4F500F0A54F /* Cell */,
+				9371E753257BAE2F00F0A54F /* StepByStepVC.swift */,
+			);
+			path = StepByStep;
+			sourceTree = "<group>";
+		};
+		9371E75D257BAE3C00F0A54F /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				9371E75E257BAE5900F0A54F /* TutorialsVC.swift */,
+				9371E75F257BAE5900F0A54F /* TutorialsVC.xib */,
+			);
+			path = Tutorials;
+			sourceTree = "<group>";
+		};
+		9371E768257BAE6300F0A54F /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				9371E769257BAE7400F0A54F /* BookMarks.swift */,
+				9371E76A257BAE7400F0A54F /* BookMarks.xib */,
+			);
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		9371E773257BB4F500F0A54F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9371E774257BB50D00F0A54F /* StepCell.swift */,
+				9371E775257BB50D00F0A54F /* StepCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C85BB7EEF06AB6A54E41CF06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F024C3140C9F72BE9063FF /* Pods_AnimeDraw.framework */,
+				375CF7F72C1BE34C71D51CB5 /* Pods_AnimeDraw_AnimeDrawUITests.framework */,
+				460D95E6532D470AF4DBA370 /* Pods_AnimeDrawTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9371E6C5257BA8EE00F0A54F /* AnimeDraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9371E6F3257BA8F000F0A54F /* Build configuration list for PBXNativeTarget "AnimeDraw" */;
+			buildPhases = (
+				9E712450E8FBD20F6D712DA8 /* [CP] Check Pods Manifest.lock */,
+				9371E6C2257BA8EE00F0A54F /* Sources */,
+				9371E6C3257BA8EE00F0A54F /* Frameworks */,
+				9371E6C4257BA8EE00F0A54F /* Resources */,
+				305F0768BE337FC06D76DCB7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnimeDraw;
+			productName = AnimeDraw;
+			productReference = 9371E6C6257BA8EE00F0A54F /* AnimeDraw.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9371E6DE257BA8F000F0A54F /* AnimeDrawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9371E6F6257BA8F000F0A54F /* Build configuration list for PBXNativeTarget "AnimeDrawTests" */;
+			buildPhases = (
+				4731E435569FCE236B52CF76 /* [CP] Check Pods Manifest.lock */,
+				9371E6DB257BA8F000F0A54F /* Sources */,
+				9371E6DC257BA8F000F0A54F /* Frameworks */,
+				9371E6DD257BA8F000F0A54F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9371E6E1257BA8F000F0A54F /* PBXTargetDependency */,
+			);
+			name = AnimeDrawTests;
+			productName = AnimeDrawTests;
+			productReference = 9371E6DF257BA8F000F0A54F /* AnimeDrawTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9371E6E9257BA8F000F0A54F /* AnimeDrawUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9371E6F9257BA8F000F0A54F /* Build configuration list for PBXNativeTarget "AnimeDrawUITests" */;
+			buildPhases = (
+				04ACDBF2F1386F99EA1F0073 /* [CP] Check Pods Manifest.lock */,
+				9371E6E6257BA8F000F0A54F /* Sources */,
+				9371E6E7257BA8F000F0A54F /* Frameworks */,
+				9371E6E8257BA8F000F0A54F /* Resources */,
+				05B74ABB4C44A6363D02A366 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9371E6EC257BA8F000F0A54F /* PBXTargetDependency */,
+			);
+			name = AnimeDrawUITests;
+			productName = AnimeDrawUITests;
+			productReference = 9371E6EA257BA8F000F0A54F /* AnimeDrawUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9371E6BE257BA8EE00F0A54F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					9371E6C5257BA8EE00F0A54F = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					9371E6DE257BA8F000F0A54F = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 9371E6C5257BA8EE00F0A54F;
+					};
+					9371E6E9257BA8F000F0A54F = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 9371E6C5257BA8EE00F0A54F;
+					};
+				};
+			};
+			buildConfigurationList = 9371E6C1257BA8EE00F0A54F /* Build configuration list for PBXProject "AnimeDraw" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9371E6BD257BA8EE00F0A54F;
+			productRefGroup = 9371E6C7257BA8EE00F0A54F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9371E6C5257BA8EE00F0A54F /* AnimeDraw */,
+				9371E6DE257BA8F000F0A54F /* AnimeDrawTests */,
+				9371E6E9257BA8F000F0A54F /* AnimeDrawUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9371E6C4257BA8EE00F0A54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936E2CBC25826302003B634F /* How to Draw Female Body.json in Resources */,
+				9371E6D9257BA8F000F0A54F /* LaunchScreen.storyboard in Resources */,
+				936E2CC025826302003B634F /* Ichigo Kurosaki Bankai.json in Resources */,
+				9371E761257BAE5900F0A54F /* TutorialsVC.xib in Resources */,
+				936E2CBA25826302003B634F /* How to Draw Various Facial Expressions.json in Resources */,
+				936E2CBD25826302003B634F /* How to Draw Round Eyes.json in Resources */,
+				93696FB92580F68A00BFDFB6 /* Anime boy.json in Resources */,
+				9371E777257BB50D00F0A54F /* StepCell.xib in Resources */,
+				936E2CC125826302003B634F /* How to Draw Male Body.json in Resources */,
+				936E2CB825826302003B634F /* How to Draw Male Eyes.json in Resources */,
+				9371E76C257BAE7400F0A54F /* BookMarks.xib in Resources */,
+				936E2CC225826302003B634F /* How to Draw Hair.json in Resources */,
+				9371E6D6257BA8F000F0A54F /* Assets.xcassets in Resources */,
+				93696FB42580F61E00BFDFB6 /* Aang from Avatar.json in Resources */,
+				936E2CC825826549003B634F /* Sample.json in Resources */,
+				936E2CB925826302003B634F /* How to Draw Sharp Eyes.json in Resources */,
+				936E2CBF25826302003B634F /* How to Draw Chibi.json in Resources */,
+				9371E6D1257BA8EE00F0A54F /* Main.storyboard in Resources */,
+				936E2CBB25826302003B634F /* How to Draw Female Eyes.json in Resources */,
+				936E2CBE25826302003B634F /* How to Draw Clothes.json in Resources */,
+				936E2CC325826302003B634F /* How to Draw Nose and Mouth.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9371E6DD257BA8F000F0A54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9371E6E8257BA8F000F0A54F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04ACDBF2F1386F99EA1F0073 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimeDraw-AnimeDrawUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		05B74ABB4C44A6363D02A366 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw-AnimeDrawUITests/Pods-AnimeDraw-AnimeDrawUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw-AnimeDrawUITests/Pods-AnimeDraw-AnimeDrawUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw-AnimeDrawUITests/Pods-AnimeDraw-AnimeDrawUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		305F0768BE337FC06D76DCB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4731E435569FCE236B52CF76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimeDrawTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E712450E8FBD20F6D712DA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimeDraw-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9371E6C2257BA8EE00F0A54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9371E74E257BAD9300F0A54F /* HomeTabbar.swift in Sources */,
+				9371E755257BAE2F00F0A54F /* StepByStepVC.swift in Sources */,
+				9371E6CE257BA8EE00F0A54F /* ViewController.swift in Sources */,
+				9371E6CA257BA8EE00F0A54F /* AppDelegate.swift in Sources */,
+				9371E76B257BAE7400F0A54F /* BookMarks.swift in Sources */,
+				9371E760257BAE5900F0A54F /* TutorialsVC.swift in Sources */,
+				9371E6D4257BA8EE00F0A54F /* AnimeDraw.xcdatamodeld in Sources */,
+				9371E749257BAD6800F0A54F /* ViewController+Extension.swift in Sources */,
+				9371E6CC257BA8EE00F0A54F /* SceneDelegate.swift in Sources */,
+				9371E776257BB50D00F0A54F /* StepCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9371E6DB257BA8F000F0A54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9371E6E4257BA8F000F0A54F /* AnimeDrawTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9371E6E6257BA8F000F0A54F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9371E6EF257BA8F000F0A54F /* AnimeDrawUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9371E6E1257BA8F000F0A54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9371E6C5257BA8EE00F0A54F /* AnimeDraw */;
+			targetProxy = 9371E6E0257BA8F000F0A54F /* PBXContainerItemProxy */;
+		};
+		9371E6EC257BA8F000F0A54F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9371E6C5257BA8EE00F0A54F /* AnimeDraw */;
+			targetProxy = 9371E6EB257BA8F000F0A54F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9371E6CF257BA8EE00F0A54F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9371E6D0257BA8EE00F0A54F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9371E6D7257BA8F000F0A54F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9371E6D8257BA8F000F0A54F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9371E6F1257BA8F000F0A54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9371E6F2257BA8F000F0A54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9371E6F4257BA8F000F0A54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03EF893E023C7704E923A133 /* Pods-AnimeDraw.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VA7N3EEEN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AnimeDraw/resource/Frameworks",
+				);
+				INFOPLIST_FILE = AnimeDraw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AnimeDraw/resource/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = haiphan.AnimeDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9371E6F5257BA8F000F0A54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8A4756088CDBAC33BDF0D18 /* Pods-AnimeDraw.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VA7N3EEEN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AnimeDraw/resource/Frameworks",
+				);
+				INFOPLIST_FILE = AnimeDraw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AnimeDraw/resource/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = haiphan.AnimeDraw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9371E6F7257BA8F000F0A54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673A40C71EF74BE33A0BA460 /* Pods-AnimeDrawTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VA7N3EEEN;
+				INFOPLIST_FILE = AnimeDrawTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = haiphan.AnimeDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimeDraw.app/AnimeDraw";
+			};
+			name = Debug;
+		};
+		9371E6F8257BA8F000F0A54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B92058FE3419317AF3ADAD49 /* Pods-AnimeDrawTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VA7N3EEEN;
+				INFOPLIST_FILE = AnimeDrawTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = haiphan.AnimeDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimeDraw.app/AnimeDraw";
+			};
+			name = Release;
+		};
+		9371E6FA257BA8F000F0A54F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289A5361AF2796B54835FE39 /* Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VA7N3EEEN;
+				INFOPLIST_FILE = AnimeDrawUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = haiphan.AnimeDrawUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AnimeDraw;
+			};
+			name = Debug;
+		};
+		9371E6FB257BA8F000F0A54F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9940ABFA160C660F210F8515 /* Pods-AnimeDraw-AnimeDrawUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7VA7N3EEEN;
+				INFOPLIST_FILE = AnimeDrawUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = haiphan.AnimeDrawUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AnimeDraw;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9371E6C1257BA8EE00F0A54F /* Build configuration list for PBXProject "AnimeDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9371E6F1257BA8F000F0A54F /* Debug */,
+				9371E6F2257BA8F000F0A54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9371E6F3257BA8F000F0A54F /* Build configuration list for PBXNativeTarget "AnimeDraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9371E6F4257BA8F000F0A54F /* Debug */,
+				9371E6F5257BA8F000F0A54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9371E6F6257BA8F000F0A54F /* Build configuration list for PBXNativeTarget "AnimeDrawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9371E6F7257BA8F000F0A54F /* Debug */,
+				9371E6F8257BA8F000F0A54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9371E6F9257BA8F000F0A54F /* Build configuration list for PBXNativeTarget "AnimeDrawUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9371E6FA257BA8F000F0A54F /* Debug */,
+				9371E6FB257BA8F000F0A54F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9371E6D2257BA8EE00F0A54F /* AnimeDraw.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9371E6D3257BA8EE00F0A54F /* AnimeDraw.xcdatamodel */,
+			);
+			currentVersion = 9371E6D3257BA8EE00F0A54F /* AnimeDraw.xcdatamodel */;
+			path = AnimeDraw.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9371E6BE257BA8EE00F0A54F /* Project object */;
+}

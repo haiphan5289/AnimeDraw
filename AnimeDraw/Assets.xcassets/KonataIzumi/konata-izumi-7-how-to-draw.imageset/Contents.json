@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "konata-izumi-7-how-to-draw.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
