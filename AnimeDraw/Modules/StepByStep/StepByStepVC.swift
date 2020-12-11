@@ -12,8 +12,12 @@ import DZNEmptyDataSet
 import ViewAnimator
 import SnapKit
 
-class StepByStepVC: UIViewController {
+enum TypeJSON: String {
+    case json
+}
 
+class StepByStepVC: UIViewController {
+    
     @IBOutlet weak var collectionView: UICollectionView!
     private var listAnime: PublishSubject<[StepModel]> = PublishSubject.init()
     private let disposeBag = DisposeBag()
@@ -25,7 +29,10 @@ class StepByStepVC: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
     }
 }
 extension StepByStepVC {
@@ -33,6 +40,8 @@ extension StepByStepVC {
         collectionView.delegate = self
         collectionView.register(StepCell.nib, forCellWithReuseIdentifier: StepCell.identifier)
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        title = "Step by Step"
+        self.navigationItem.title = "someTitle"
     }
     private func setupRX() {
         self.listAnime.asObservable()
@@ -42,20 +51,29 @@ extension StepByStepVC {
                 cell.img.image = UIImage(named: data.image ?? "")
             }.disposed(by: disposeBag)
         
-        ReadJSON.shared.readJSONObs(offType: [StepModel].self, name: "StepbyStep", type: "json").subscribe { [weak self] (result) in
+        ReadJSON.shared.readJSONObs(offType: [StepModel].self, name: "Step by Step", type: TypeJSON.json.rawValue)
+            .subscribe { [weak self] (result) in
+                guard let wSelf = self else {
+                    return
+                }
+                switch result {
+                case .success(let data):
+                    wSelf.listAnime.onNext(data)
+                case .failure(let err):
+                    print("\(err)")
+                }
+            } onError: { (err) in
+                print("\(err.localizedDescription)")
+            }.disposed(by: disposeBag)
+        
+        collectionView.rx.itemSelected.bind { [weak self] (idx) in
             guard let wSelf = self else {
                 return
             }
-            switch result {
-            case .success(let data):
-                wSelf.listAnime.onNext(data)
-            case .failure(let err):
-                print("\(err)")
-            }
-        } onError: { (err) in
-            print("\(err.localizedDescription)")
+            let vc = StepDetail(nibName: "StepDetail", bundle: nil)
+            wSelf.navigationController?.pushViewController(vc, animated: true)
         }.disposed(by: disposeBag)
-
+        
     }
 }
 extension StepByStepVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {

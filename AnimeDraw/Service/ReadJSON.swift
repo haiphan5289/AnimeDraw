@@ -15,7 +15,7 @@ class ReadJSON {
     private let disposeBag = DisposeBag()
     func readJSONObs<T: Codable>(offType: T.Type, name: String, type: String) -> Observable<APIResult<T, Error>> {
         return Observable.create { (observe) -> Disposable in
-            if let path = Bundle.main.path(forResource: "Step by Step", ofType: "json") {
+            if let path = Bundle.main.path(forResource: name, ofType: type) {
                 do {
                     let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
                     let objec = try JSONDecoder().decode(T.self, from: data)

@@ -42,10 +42,10 @@ class HomeTabbar: UITabBarController {
         visualize()
     }
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        super.viewWillAppear(animated)
     }
     override func viewWillDisappear(_ animated: Bool) {
-        self.navigationItem.title = ""
+        super.viewWillDisappear(animated)
     }
 }
 extension HomeTabbar {
