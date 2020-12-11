@@ -42,6 +42,10 @@
 		9371E76C257BAE7400F0A54F /* BookMarks.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9371E76A257BAE7400F0A54F /* BookMarks.xib */; };
 		9371E776257BB50D00F0A54F /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E774257BB50D00F0A54F /* StepCell.swift */; };
 		9371E777257BB50D00F0A54F /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9371E775257BB50D00F0A54F /* StepCell.xib */; };
+		93ACC02925830AFB0066B1E1 /* ReadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACC02825830AFB0066B1E1 /* ReadJSON.swift */; };
+		93ACC03225830DF40066B1E1 /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACC03125830DF40066B1E1 /* StepModel.swift */; };
+		93ACC08F25831E850066B1E1 /* Step by Step.json in Resources */ = {isa = PBXBuildFile; fileRef = 93ACC08E25831E850066B1E1 /* Step by Step.json */; };
+		93ACC0972583207E0066B1E1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACC0962583207E0066B1E1 /* UIView+Extension.swift */; };
 		D9214865F80662E7698A8DA0 /* Pods_AnimeDrawTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460D95E6532D470AF4DBA370 /* Pods_AnimeDrawTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +112,10 @@
 		9371E76A257BAE7400F0A54F /* BookMarks.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookMarks.xib; sourceTree = "<group>"; };
 		9371E774257BB50D00F0A54F /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
 		9371E775257BB50D00F0A54F /* StepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepCell.xib; sourceTree = "<group>"; };
+		93ACC02825830AFB0066B1E1 /* ReadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJSON.swift; sourceTree = "<group>"; };
+		93ACC03125830DF40066B1E1 /* StepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
+		93ACC08E25831E850066B1E1 /* Step by Step.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Step by Step.json"; sourceTree = "<group>"; };
+		93ACC0962583207E0066B1E1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		9940ABFA160C660F210F8515 /* Pods-AnimeDraw-AnimeDrawUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDraw-AnimeDrawUITests.release.xcconfig"; path = "Target Support Files/Pods-AnimeDraw-AnimeDrawUITests/Pods-AnimeDraw-AnimeDrawUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B92058FE3419317AF3ADAD49 /* Pods-AnimeDrawTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDrawTests.release.xcconfig"; path = "Target Support Files/Pods-AnimeDrawTests/Pods-AnimeDrawTests.release.xcconfig"; sourceTree = "<group>"; };
 		F8A4756088CDBAC33BDF0D18 /* Pods-AnimeDraw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDraw.release.xcconfig"; path = "Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +187,7 @@
 				936E2CAD25826300003B634F /* How to Draw Sharp Eyes.json */,
 				936E2CAE25826300003B634F /* How to Draw Various Facial Expressions.json */,
 				936E2CB425826301003B634F /* Ichigo Kurosaki Bankai.json */,
+				93ACC08E25831E850066B1E1 /* Step by Step.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -209,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				936E2CAB258262F1003B634F /* JSON */,
+				93ACC02725830AE80066B1E1 /* Service */,
 				93696FAF2580F60500BFDFB6 /* resource */,
 				9371E747257BAD4100F0A54F /* Extension */,
 				9371E745257BAD1A00F0A54F /* Modules */,
@@ -265,6 +275,7 @@
 			isa = PBXGroup;
 			children = (
 				9371E748257BAD6800F0A54F /* ViewController+Extension.swift */,
+				93ACC0962583207E0066B1E1 /* UIView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -272,6 +283,7 @@
 		9371E752257BAE1900F0A54F /* StepByStep */ = {
 			isa = PBXGroup;
 			children = (
+				93ACC03025830DBB0066B1E1 /* Model */,
 				9371E773257BB4F500F0A54F /* Cell */,
 				9371E753257BAE2F00F0A54F /* StepByStepVC.swift */,
 			);
@@ -303,6 +315,22 @@
 				9371E775257BB50D00F0A54F /* StepCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		93ACC02725830AE80066B1E1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				93ACC02825830AFB0066B1E1 /* ReadJSON.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		93ACC03025830DBB0066B1E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93ACC03125830DF40066B1E1 /* StepModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C85BB7EEF06AB6A54E41CF06 /* Frameworks */ = {
@@ -425,6 +453,7 @@
 			files = (
 				936E2CBC25826302003B634F /* How to Draw Female Body.json in Resources */,
 				9371E6D9257BA8F000F0A54F /* LaunchScreen.storyboard in Resources */,
+				93ACC08F25831E850066B1E1 /* Step by Step.json in Resources */,
 				936E2CC025826302003B634F /* Ichigo Kurosaki Bankai.json in Resources */,
 				9371E761257BAE5900F0A54F /* TutorialsVC.xib in Resources */,
 				936E2CBA25826302003B634F /* How to Draw Various Facial Expressions.json in Resources */,
@@ -573,10 +602,13 @@
 			files = (
 				9371E74E257BAD9300F0A54F /* HomeTabbar.swift in Sources */,
 				9371E755257BAE2F00F0A54F /* StepByStepVC.swift in Sources */,
+				93ACC0972583207E0066B1E1 /* UIView+Extension.swift in Sources */,
 				9371E6CE257BA8EE00F0A54F /* ViewController.swift in Sources */,
+				93ACC02925830AFB0066B1E1 /* ReadJSON.swift in Sources */,
 				9371E6CA257BA8EE00F0A54F /* AppDelegate.swift in Sources */,
 				9371E76B257BAE7400F0A54F /* BookMarks.swift in Sources */,
 				9371E760257BAE5900F0A54F /* TutorialsVC.swift in Sources */,
+				93ACC03225830DF40066B1E1 /* StepModel.swift in Sources */,
 				9371E6D4257BA8EE00F0A54F /* AnimeDraw.xcdatamodeld in Sources */,
 				9371E749257BAD6800F0A54F /* ViewController+Extension.swift in Sources */,
 				9371E6CC257BA8EE00F0A54F /* SceneDelegate.swift in Sources */,

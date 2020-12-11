@@ -15,11 +15,11 @@ import SnapKit
 class StepByStepVC: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    private var listAnime: PublishSubject<[StepModel]> = PublishSubject.init()
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.layoutIfNeeded()
         self.visualize()
         self.setupRX()
     }
@@ -35,18 +35,35 @@ extension StepByStepVC {
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }
     private func setupRX() {
-        Observable.just([1,2,3])
+        self.listAnime.asObservable()
             .bind(to: collectionView.rx.items(cellIdentifier: StepCell.identifier, cellType: StepCell.self)) { row, data, cell in
-                cell.backgroundColor = (row % 2 == 0) ? .red : .blue
+                cell.lbName.text = data.text
+                cell.lbName.sizeToFit()
+                cell.img.image = UIImage(named: data.image ?? "")
             }.disposed(by: disposeBag)
+        
+        ReadJSON.shared.readJSONObs(offType: [StepModel].self, name: "StepbyStep", type: "json").subscribe { [weak self] (result) in
+            guard let wSelf = self else {
+                return
+            }
+            switch result {
+            case .success(let data):
+                wSelf.listAnime.onNext(data)
+            case .failure(let err):
+                print("\(err)")
+            }
+        } onError: { (err) in
+            print("\(err.localizedDescription)")
+        }.disposed(by: disposeBag)
+
     }
 }
 extension StepByStepVC: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (self.view.bounds.width - 30) / 2 , height: 150)
+        return CGSize(width: (self.view.bounds.width - 30) / 2 , height: 200)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return 20
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 10
