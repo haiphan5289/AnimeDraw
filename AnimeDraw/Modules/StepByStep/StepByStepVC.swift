@@ -19,7 +19,8 @@ enum TypeJSON: String {
 class StepByStepVC: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    private var listAnime: PublishSubject<[StepModel]> = PublishSubject.init()
+    @IBOutlet weak var navigation: UINavigationItem!
+    @VariableReplay private var listAnime: [StepModel] = []
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -30,6 +31,15 @@ class StepByStepVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = false
+        self.hidesBottomBarWhenPushed = false
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+//            self.navigationController?.navigationBar.prefersLargeTitles = true
+//            self.navigationController?.navigationBar.setNeedsLayout()
+//            self.navigationController?.navigationBar.layoutIfNeeded()
+//            self.navigationController?.navigationBar.setNeedsDisplay()
+//            _ = self.navigationController?.view.snapshotView(afterScreenUpdates: true)
+//        }
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -41,10 +51,10 @@ extension StepByStepVC {
         collectionView.register(StepCell.nib, forCellWithReuseIdentifier: StepCell.identifier)
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         title = "Step by Step"
-        self.navigationItem.title = "someTitle"
+        self.navigationItem.title = "Step by Step"
     }
     private func setupRX() {
-        self.listAnime.asObservable()
+        self.$listAnime.asObservable()
             .bind(to: collectionView.rx.items(cellIdentifier: StepCell.identifier, cellType: StepCell.self)) { row, data, cell in
                 cell.lbName.text = data.text
                 cell.lbName.sizeToFit()
@@ -58,7 +68,7 @@ extension StepByStepVC {
                 }
                 switch result {
                 case .success(let data):
-                    wSelf.listAnime.onNext(data)
+                    wSelf.listAnime = data
                 case .failure(let err):
                     print("\(err)")
                 }
@@ -71,6 +81,9 @@ extension StepByStepVC {
                 return
             }
             let vc = StepDetail(nibName: "StepDetail", bundle: nil)
+            let item = self?.listAnime[idx.row]
+            vc.titleAnime = item?.text ?? ""
+            vc.hidesBottomBarWhenPushed = true
             wSelf.navigationController?.pushViewController(vc, animated: true)
         }.disposed(by: disposeBag)
         

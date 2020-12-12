@@ -8,21 +8,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tutorials-->
+        <!--TutorialsVC-->
         <scene sceneID="lYT-E5-ZPv">
             <objects>
-                <viewController id="bT9-ud-3pv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TutorialsVC" id="bT9-ud-3pv" customClass="TutorialsVC" customModule="AnimeDraw" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ck3-Jw-Oqz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pj6-uC-o3o">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bkm-k0-5I9">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="9be-ZY-bbW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pj6-uC-o3o" firstAttribute="top" secondItem="9be-ZY-bbW" secondAttribute="top" id="V9e-MF-t5h"/>
+                            <constraint firstItem="9be-ZY-bbW" firstAttribute="trailing" secondItem="Pj6-uC-o3o" secondAttribute="trailing" id="auQ-yR-yna"/>
+                            <constraint firstAttribute="bottom" secondItem="Pj6-uC-o3o" secondAttribute="bottom" id="jeN-0H-ah4"/>
+                            <constraint firstItem="Pj6-uC-o3o" firstAttribute="leading" secondItem="ck3-Jw-Oqz" secondAttribute="leading" id="mrp-OS-8Ls"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tutorials" image="ic_tutorial" id="taP-cO-fCO"/>
+                    <navigationItem key="navigationItem" id="Lgu-6v-EEF"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Pj6-uC-o3o" id="zRF-VN-Yam"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tzu-gV-BhY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="587" y="9"/>
+            <point key="canvasLocation" x="1274" y="116"/>
         </scene>
         <!--Book marks-->
         <scene sceneID="cjo-JE-vPA">
@@ -40,7 +62,7 @@
             </objects>
             <point key="canvasLocation" x="-352" y="-952"/>
         </scene>
-        <!--Step by Step-->
+        <!--Step By StepVC-->
         <scene sceneID="oxe-qn-1gr">
             <objects>
                 <viewController id="dFP-KV-uxQ" customClass="StepByStepVC" customModule="AnimeDraw" customModuleProvider="target" sceneMemberID="viewController">
@@ -49,7 +71,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uqj-yQ-PqU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9nM-Qs-ISA">
                                     <size key="itemSize" width="128" height="128"/>
@@ -69,14 +91,15 @@
                             <constraint firstItem="uqj-yQ-PqU" firstAttribute="top" secondItem="3ck-Id-ZcP" secondAttribute="top" id="rX1-ua-lyP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Step by Step" image="ic_step" id="1hw-Pl-Y5X"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="v7z-AF-BjS"/>
                     <connections>
                         <outlet property="collectionView" destination="uqj-yQ-PqU" id="fjJ-I8-1nd"/>
+                        <outlet property="navigation" destination="v7z-AF-BjS" id="5N6-sf-PXz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIK-XD-JGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="587" y="-598"/>
+            <point key="canvasLocation" x="1403" y="-587"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1WV-NL-ewL">
@@ -88,14 +111,52 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="dFP-KV-uxQ" kind="relationship" relationship="viewControllers" id="UnG-Si-LOZ"/>
-                        <segue destination="bT9-ud-3pv" kind="relationship" relationship="viewControllers" id="Nkc-QH-rs9"/>
+                        <segue destination="7ub-eQ-Fq6" kind="relationship" relationship="viewControllers" id="UnG-Si-LOZ"/>
+                        <segue destination="Nsn-mz-0rY" kind="relationship" relationship="viewControllers" id="Nkc-QH-rs9"/>
                         <segue destination="PW7-it-NC6" kind="relationship" relationship="viewControllers" id="Wfa-ib-eyB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxj-Gk-JgN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-303" y="-294"/>
+        </scene>
+        <!--Step by Step-->
+        <scene sceneID="FdY-cB-069">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7ub-eQ-Fq6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Step by Step" image="ic_step" id="1hw-Pl-Y5X"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Aw8-re-tle">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dFP-KV-uxQ" kind="relationship" relationship="rootViewController" id="dI3-s6-fQh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFv-s8-ZA8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586.95652173913049" y="-598.66071428571422"/>
+        </scene>
+        <!--Tutorials-->
+        <scene sceneID="rht-tM-xhq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nsn-mz-0rY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tutorials" image="ic_tutorial" id="taP-cO-fCO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VAR-hi-c3n">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bT9-ud-3pv" kind="relationship" relationship="rootViewController" id="r93-Sd-lfZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99P-uA-iHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="574" y="101"/>
         </scene>
     </scenes>
     <resources>

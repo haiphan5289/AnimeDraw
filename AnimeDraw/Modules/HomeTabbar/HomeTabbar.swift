@@ -40,6 +40,7 @@ class HomeTabbar: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         visualize()
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

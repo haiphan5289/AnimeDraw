@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: winScene)
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"HomeTabbar")
         let navi: UINavigationController = UINavigationController(rootViewController: vc)
-        window?.rootViewController = navi
+        window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
 

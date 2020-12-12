@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StepDetail" customModule="AnimeDraw" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="FHg-lV-FJ1" id="a08-gt-Dvl"/>
+                <outlet property="pageControl" destination="alU-wJ-0xy" id="0kd-S8-1tg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,14 +19,44 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FHg-lV-FJ1">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="708"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="e2k-Hh-cgw">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="alU-wJ-0xy">
+                    <rect key="frame" x="0.0" y="708" width="414" height="28"/>
+                    <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" systemColor="systemGreenColor"/>
+                </pageControl>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="112" y="132"/>
+            <constraints>
+                <constraint firstItem="alU-wJ-0xy" firstAttribute="top" secondItem="FHg-lV-FJ1" secondAttribute="bottom" id="8bX-Fb-t3h"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="alU-wJ-0xy" secondAttribute="bottom" id="Si5-oO-cu6"/>
+                <constraint firstAttribute="trailing" secondItem="FHg-lV-FJ1" secondAttribute="trailing" id="Xjh-uG-QXL"/>
+                <constraint firstItem="FHg-lV-FJ1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="j79-G9-cSz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="alU-wJ-0xy" secondAttribute="trailing" id="nOB-Yb-2aU"/>
+                <constraint firstItem="alU-wJ-0xy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ppY-Py-uCs"/>
+                <constraint firstItem="FHg-lV-FJ1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vOY-Ne-2Sp"/>
+            </constraints>
+            <point key="canvasLocation" x="111.59420289855073" y="131.25"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

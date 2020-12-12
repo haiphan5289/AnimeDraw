@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		05ECAC263209F8233DD4DDA5 /* Pods_AnimeDraw_AnimeDrawUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375CF7F72C1BE34C71D51CB5 /* Pods_AnimeDraw_AnimeDrawUITests.framework */; };
 		2C6253979ADDFB4D3BFAB4DB /* Pods_AnimeDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F024C3140C9F72BE9063FF /* Pods_AnimeDraw.framework */; };
-		93696FB42580F61E00BFDFB6 /* Aang from Avatar.json in Resources */ = {isa = PBXBuildFile; fileRef = 93696FB32580F61E00BFDFB6 /* Aang from Avatar.json */; };
-		93696FB92580F68A00BFDFB6 /* Anime boy.json in Resources */ = {isa = PBXBuildFile; fileRef = 93696FB82580F68A00BFDFB6 /* Anime boy.json */; };
 		936E2CB825826302003B634F /* How to Draw Male Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CAC25826300003B634F /* How to Draw Male Eyes.json */; };
 		936E2CB925826302003B634F /* How to Draw Sharp Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CAD25826300003B634F /* How to Draw Sharp Eyes.json */; };
 		936E2CBA25826302003B634F /* How to Draw Various Facial Expressions.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CAE25826300003B634F /* How to Draw Various Facial Expressions.json */; };
@@ -37,14 +35,47 @@
 		9371E74E257BAD9300F0A54F /* HomeTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E74D257BAD9300F0A54F /* HomeTabbar.swift */; };
 		9371E755257BAE2F00F0A54F /* StepByStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E753257BAE2F00F0A54F /* StepByStepVC.swift */; };
 		9371E760257BAE5900F0A54F /* TutorialsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E75E257BAE5900F0A54F /* TutorialsVC.swift */; };
-		9371E761257BAE5900F0A54F /* TutorialsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9371E75F257BAE5900F0A54F /* TutorialsVC.xib */; };
 		9371E76B257BAE7400F0A54F /* BookMarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E769257BAE7400F0A54F /* BookMarks.swift */; };
 		9371E76C257BAE7400F0A54F /* BookMarks.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9371E76A257BAE7400F0A54F /* BookMarks.xib */; };
 		9371E776257BB50D00F0A54F /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E774257BB50D00F0A54F /* StepCell.swift */; };
 		9371E777257BB50D00F0A54F /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9371E775257BB50D00F0A54F /* StepCell.xib */; };
+		93775F4C2584E2E700DCD6E4 /* PropertyWapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93775F4B2584E2E700DCD6E4 /* PropertyWapper.swift */; };
+		93775F532584E68900DCD6E4 /* StepDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93775F512584E68900DCD6E4 /* StepDetailCell.swift */; };
+		93775F542584E68900DCD6E4 /* StepDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93775F522584E68900DCD6E4 /* StepDetailCell.xib */; };
+		93775F612584E97900DCD6E4 /* Anime boy.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F602584E97900DCD6E4 /* Anime boy.json */; };
+		93775F662584E98100DCD6E4 /* Anime cat.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F652584E98100DCD6E4 /* Anime cat.json */; };
+		93775F6B2584E98A00DCD6E4 /* Anime dog.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F6A2584E98A00DCD6E4 /* Anime dog.json */; };
+		93775F702584E99100DCD6E4 /* Anime girl.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F6F2584E99100DCD6E4 /* Anime girl.json */; };
+		93775F752584E9A400DCD6E4 /* Ash Ketchum.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F742584E9A400DCD6E4 /* Ash Ketchum.json */; };
+		93775F7A2584E9AE00DCD6E4 /* Bishounen.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F792584E9AE00DCD6E4 /* Bishounen.json */; };
+		93775F7F2584E9B500DCD6E4 /* Bulbasaur Pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F7E2584E9B500DCD6E4 /* Bulbasaur Pokemon.json */; };
+		93775F842584E9BD00DCD6E4 /* Deidara from Naruto.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F832584E9BD00DCD6E4 /* Deidara from Naruto.json */; };
+		93775F892584E9C500DCD6E4 /* Detective Conan.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F882584E9C500DCD6E4 /* Detective Conan.json */; };
+		93775F8E2584E9CD00DCD6E4 /* Doraemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F8D2584E9CD00DCD6E4 /* Doraemon.json */; };
+		93775F932584E9D400DCD6E4 /* Eevee the Pokemon.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F922584E9D400DCD6E4 /* Eevee the Pokemon.json */; };
+		93775F982584E9E000DCD6E4 /* Gaara.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F972584E9E000DCD6E4 /* Gaara.json */; };
+		93775F9D2584E9E600DCD6E4 /* Gingka Hagane from Beyblade.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775F9C2584E9E600DCD6E4 /* Gingka Hagane from Beyblade.json */; };
+		93775FA22584E9F000DCD6E4 /* Gohan.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FA12584E9F000DCD6E4 /* Gohan.json */; };
+		93775FA72584E9F700DCD6E4 /* Goku Super Saiyan.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FA62584E9F700DCD6E4 /* Goku Super Saiyan.json */; };
+		93775FAC2584E9FF00DCD6E4 /* Hatsune Miku.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FAB2584E9FF00DCD6E4 /* Hatsune Miku.json */; };
+		93775FB12584EA0600DCD6E4 /* Hello Kitty.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FB02584EA0600DCD6E4 /* Hello Kitty.json */; };
+		93775FB62584EA1100DCD6E4 /* Inuyasha.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FB52584EA1100DCD6E4 /* Inuyasha.json */; };
+		93775FBB2584EA1700DCD6E4 /* Itachi Uchiha.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FBA2584EA1700DCD6E4 /* Itachi Uchiha.json */; };
+		93775FC02584EA1E00DCD6E4 /* Kagami Hiiragi.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FBF2584EA1E00DCD6E4 /* Kagami Hiiragi.json */; };
+		93775FC52584EA2500DCD6E4 /* Kagome Higurashi.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FC42584EA2500DCD6E4 /* Kagome Higurashi.json */; };
+		93775FCA2584EA3900DCD6E4 /* Kakashi Hatake.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FC92584EA3900DCD6E4 /* Kakashi Hatake.json */; };
+		93775FCF2584EA4100DCD6E4 /* Konata Izumi.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FCE2584EA4100DCD6E4 /* Konata Izumi.json */; };
+		93775FD42584EA4B00DCD6E4 /* Korra.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FD32584EA4B00DCD6E4 /* Korra.json */; };
+		93775FD92584EA5100DCD6E4 /* Link from Legend of Zelda.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FD82584EA5100DCD6E4 /* Link from Legend of Zelda.json */; };
+		93775FDE2584EA5900DCD6E4 /* Pikachu Pokémon.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FDD2584EA5900DCD6E4 /* Pikachu Pokémon.json */; };
+		93775FE32584EA6400DCD6E4 /* Sasuke.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FE22584EA6400DCD6E4 /* Sasuke.json */; };
+		93775FE82584EA6A00DCD6E4 /* Toshiro Hitsugaya.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FE72584EA6A00DCD6E4 /* Toshiro Hitsugaya.json */; };
+		93775FF02584EAEC00DCD6E4 /* Aang from Avatar.json in Resources */ = {isa = PBXBuildFile; fileRef = 93775FEF2584EAEC00DCD6E4 /* Aang from Avatar.json */; };
+		93775FF82584F19C00DCD6E4 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93775FF72584F19C00DCD6E4 /* String+Extension.swift */; };
+		9377600F2584F36E00DCD6E4 /* Step by Step.json in Resources */ = {isa = PBXBuildFile; fileRef = 9377600E2584F36E00DCD6E4 /* Step by Step.json */; };
+		937760142584F38100DCD6E4 /* Tutorials.json in Resources */ = {isa = PBXBuildFile; fileRef = 937760132584F38100DCD6E4 /* Tutorials.json */; };
 		93ACC02925830AFB0066B1E1 /* ReadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACC02825830AFB0066B1E1 /* ReadJSON.swift */; };
 		93ACC03225830DF40066B1E1 /* StepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACC03125830DF40066B1E1 /* StepModel.swift */; };
-		93ACC08F25831E850066B1E1 /* Step by Step.json in Resources */ = {isa = PBXBuildFile; fileRef = 93ACC08E25831E850066B1E1 /* Step by Step.json */; };
 		93ACC0972583207E0066B1E1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACC0962583207E0066B1E1 /* UIView+Extension.swift */; };
 		93ACC0A1258322F50066B1E1 /* StepDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ACC09F258322F50066B1E1 /* StepDetail.swift */; };
 		93ACC0A2258322F50066B1E1 /* StepDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93ACC0A0258322F50066B1E1 /* StepDetail.xib */; };
@@ -75,8 +106,6 @@
 		460D95E6532D470AF4DBA370 /* Pods_AnimeDrawTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeDrawTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F024C3140C9F72BE9063FF /* Pods_AnimeDraw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeDraw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		673A40C71EF74BE33A0BA460 /* Pods-AnimeDrawTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDrawTests.debug.xcconfig"; path = "Target Support Files/Pods-AnimeDrawTests/Pods-AnimeDrawTests.debug.xcconfig"; sourceTree = "<group>"; };
-		93696FB32580F61E00BFDFB6 /* Aang from Avatar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Aang from Avatar.json"; sourceTree = "<group>"; };
-		93696FB82580F68A00BFDFB6 /* Anime boy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Anime boy.json"; sourceTree = "<group>"; };
 		936E2CAC25826300003B634F /* How to Draw Male Eyes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Male Eyes.json"; sourceTree = "<group>"; };
 		936E2CAD25826300003B634F /* How to Draw Sharp Eyes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Sharp Eyes.json"; sourceTree = "<group>"; };
 		936E2CAE25826300003B634F /* How to Draw Various Facial Expressions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Various Facial Expressions.json"; sourceTree = "<group>"; };
@@ -109,14 +138,47 @@
 		9371E74D257BAD9300F0A54F /* HomeTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabbar.swift; sourceTree = "<group>"; };
 		9371E753257BAE2F00F0A54F /* StepByStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepVC.swift; sourceTree = "<group>"; };
 		9371E75E257BAE5900F0A54F /* TutorialsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsVC.swift; sourceTree = "<group>"; };
-		9371E75F257BAE5900F0A54F /* TutorialsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialsVC.xib; sourceTree = "<group>"; };
 		9371E769257BAE7400F0A54F /* BookMarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarks.swift; sourceTree = "<group>"; };
 		9371E76A257BAE7400F0A54F /* BookMarks.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookMarks.xib; sourceTree = "<group>"; };
 		9371E774257BB50D00F0A54F /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
 		9371E775257BB50D00F0A54F /* StepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepCell.xib; sourceTree = "<group>"; };
+		93775F4B2584E2E700DCD6E4 /* PropertyWapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWapper.swift; sourceTree = "<group>"; };
+		93775F512584E68900DCD6E4 /* StepDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepDetailCell.swift; sourceTree = "<group>"; };
+		93775F522584E68900DCD6E4 /* StepDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepDetailCell.xib; sourceTree = "<group>"; };
+		93775F602584E97900DCD6E4 /* Anime boy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Anime boy.json"; sourceTree = "<group>"; };
+		93775F652584E98100DCD6E4 /* Anime cat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Anime cat.json"; sourceTree = "<group>"; };
+		93775F6A2584E98A00DCD6E4 /* Anime dog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Anime dog.json"; sourceTree = "<group>"; };
+		93775F6F2584E99100DCD6E4 /* Anime girl.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Anime girl.json"; sourceTree = "<group>"; };
+		93775F742584E9A400DCD6E4 /* Ash Ketchum.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Ash Ketchum.json"; sourceTree = "<group>"; };
+		93775F792584E9AE00DCD6E4 /* Bishounen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bishounen.json; sourceTree = "<group>"; };
+		93775F7E2584E9B500DCD6E4 /* Bulbasaur Pokemon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Bulbasaur Pokemon.json"; sourceTree = "<group>"; };
+		93775F832584E9BD00DCD6E4 /* Deidara from Naruto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Deidara from Naruto.json"; sourceTree = "<group>"; };
+		93775F882584E9C500DCD6E4 /* Detective Conan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Detective Conan.json"; sourceTree = "<group>"; };
+		93775F8D2584E9CD00DCD6E4 /* Doraemon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Doraemon.json; sourceTree = "<group>"; };
+		93775F922584E9D400DCD6E4 /* Eevee the Pokemon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Eevee the Pokemon.json"; sourceTree = "<group>"; };
+		93775F972584E9E000DCD6E4 /* Gaara.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Gaara.json; sourceTree = "<group>"; };
+		93775F9C2584E9E600DCD6E4 /* Gingka Hagane from Beyblade.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Gingka Hagane from Beyblade.json"; sourceTree = "<group>"; };
+		93775FA12584E9F000DCD6E4 /* Gohan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Gohan.json; sourceTree = "<group>"; };
+		93775FA62584E9F700DCD6E4 /* Goku Super Saiyan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Goku Super Saiyan.json"; sourceTree = "<group>"; };
+		93775FAB2584E9FF00DCD6E4 /* Hatsune Miku.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Hatsune Miku.json"; sourceTree = "<group>"; };
+		93775FB02584EA0600DCD6E4 /* Hello Kitty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Hello Kitty.json"; sourceTree = "<group>"; };
+		93775FB52584EA1100DCD6E4 /* Inuyasha.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Inuyasha.json; sourceTree = "<group>"; };
+		93775FBA2584EA1700DCD6E4 /* Itachi Uchiha.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Itachi Uchiha.json"; sourceTree = "<group>"; };
+		93775FBF2584EA1E00DCD6E4 /* Kagami Hiiragi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Kagami Hiiragi.json"; sourceTree = "<group>"; };
+		93775FC42584EA2500DCD6E4 /* Kagome Higurashi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Kagome Higurashi.json"; sourceTree = "<group>"; };
+		93775FC92584EA3900DCD6E4 /* Kakashi Hatake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Kakashi Hatake.json"; sourceTree = "<group>"; };
+		93775FCE2584EA4100DCD6E4 /* Konata Izumi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Konata Izumi.json"; sourceTree = "<group>"; };
+		93775FD32584EA4B00DCD6E4 /* Korra.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Korra.json; sourceTree = "<group>"; };
+		93775FD82584EA5100DCD6E4 /* Link from Legend of Zelda.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Link from Legend of Zelda.json"; sourceTree = "<group>"; };
+		93775FDD2584EA5900DCD6E4 /* Pikachu Pokémon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Pikachu Pokémon.json"; sourceTree = "<group>"; };
+		93775FE22584EA6400DCD6E4 /* Sasuke.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Sasuke.json; sourceTree = "<group>"; };
+		93775FE72584EA6A00DCD6E4 /* Toshiro Hitsugaya.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Toshiro Hitsugaya.json"; sourceTree = "<group>"; };
+		93775FEF2584EAEC00DCD6E4 /* Aang from Avatar.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Aang from Avatar.json"; sourceTree = "<group>"; };
+		93775FF72584F19C00DCD6E4 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		9377600E2584F36E00DCD6E4 /* Step by Step.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Step by Step.json"; sourceTree = "<group>"; };
+		937760132584F38100DCD6E4 /* Tutorials.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Tutorials.json; sourceTree = "<group>"; };
 		93ACC02825830AFB0066B1E1 /* ReadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadJSON.swift; sourceTree = "<group>"; };
 		93ACC03125830DF40066B1E1 /* StepModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepModel.swift; sourceTree = "<group>"; };
-		93ACC08E25831E850066B1E1 /* Step by Step.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Step by Step.json"; sourceTree = "<group>"; };
 		93ACC0962583207E0066B1E1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		93ACC09F258322F50066B1E1 /* StepDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepDetail.swift; sourceTree = "<group>"; };
 		93ACC0A0258322F50066B1E1 /* StepDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepDetail.xib; sourceTree = "<group>"; };
@@ -166,32 +228,12 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		93696FAF2580F60500BFDFB6 /* resource */ = {
-			isa = PBXGroup;
-			children = (
-				93696FB32580F61E00BFDFB6 /* Aang from Avatar.json */,
-				93696FB82580F68A00BFDFB6 /* Anime boy.json */,
-			);
-			path = resource;
-			sourceTree = "<group>";
-		};
 		936E2CAB258262F1003B634F /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				936E2CC725826549003B634F /* Sample.json */,
-				936E2CB325826301003B634F /* How to Draw Chibi.json */,
-				936E2CB225826301003B634F /* How to Draw Clothes.json */,
-				936E2CB025826301003B634F /* How to Draw Female Body.json */,
-				936E2CAF25826300003B634F /* How to Draw Female Eyes.json */,
-				936E2CB625826302003B634F /* How to Draw Hair.json */,
-				936E2CB525826301003B634F /* How to Draw Male Body.json */,
-				936E2CAC25826300003B634F /* How to Draw Male Eyes.json */,
-				936E2CB725826302003B634F /* How to Draw Nose and Mouth.json */,
-				936E2CB125826301003B634F /* How to Draw Round Eyes.json */,
-				936E2CAD25826300003B634F /* How to Draw Sharp Eyes.json */,
-				936E2CAE25826300003B634F /* How to Draw Various Facial Expressions.json */,
-				936E2CB425826301003B634F /* Ichigo Kurosaki Bankai.json */,
-				93ACC08E25831E850066B1E1 /* Step by Step.json */,
+				93775FFD2584F31000DCD6E4 /* Tutorials */,
+				93775FFC2584F2F900DCD6E4 /* StepByStep */,
+				9377601E2584F47700DCD6E4 /* ResourceJSon */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -223,7 +265,6 @@
 			children = (
 				936E2CAB258262F1003B634F /* JSON */,
 				93ACC02725830AE80066B1E1 /* Service */,
-				93696FAF2580F60500BFDFB6 /* resource */,
 				9371E747257BAD4100F0A54F /* Extension */,
 				9371E745257BAD1A00F0A54F /* Modules */,
 				9371E6C9257BA8EE00F0A54F /* AppDelegate.swift */,
@@ -281,6 +322,8 @@
 			children = (
 				9371E748257BAD6800F0A54F /* ViewController+Extension.swift */,
 				93ACC0962583207E0066B1E1 /* UIView+Extension.swift */,
+				93775FF72584F19C00DCD6E4 /* String+Extension.swift */,
+				93775F4B2584E2E700DCD6E4 /* PropertyWapper.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -299,7 +342,6 @@
 			isa = PBXGroup;
 			children = (
 				9371E75E257BAE5900F0A54F /* TutorialsVC.swift */,
-				9371E75F257BAE5900F0A54F /* TutorialsVC.xib */,
 			);
 			path = Tutorials;
 			sourceTree = "<group>";
@@ -322,6 +364,80 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		93775F502584E66900DCD6E4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				93775F512584E68900DCD6E4 /* StepDetailCell.swift */,
+				93775F522584E68900DCD6E4 /* StepDetailCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		93775FFC2584F2F900DCD6E4 /* StepByStep */ = {
+			isa = PBXGroup;
+			children = (
+				9377600E2584F36E00DCD6E4 /* Step by Step.json */,
+			);
+			path = StepByStep;
+			sourceTree = "<group>";
+		};
+		93775FFD2584F31000DCD6E4 /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				937760132584F38100DCD6E4 /* Tutorials.json */,
+				936E2CB325826301003B634F /* How to Draw Chibi.json */,
+				936E2CB225826301003B634F /* How to Draw Clothes.json */,
+				936E2CB025826301003B634F /* How to Draw Female Body.json */,
+				936E2CAF25826300003B634F /* How to Draw Female Eyes.json */,
+				936E2CB625826302003B634F /* How to Draw Hair.json */,
+				936E2CB525826301003B634F /* How to Draw Male Body.json */,
+				936E2CAC25826300003B634F /* How to Draw Male Eyes.json */,
+				936E2CB725826302003B634F /* How to Draw Nose and Mouth.json */,
+				936E2CB125826301003B634F /* How to Draw Round Eyes.json */,
+				936E2CAD25826300003B634F /* How to Draw Sharp Eyes.json */,
+				936E2CAE25826300003B634F /* How to Draw Various Facial Expressions.json */,
+			);
+			path = Tutorials;
+			sourceTree = "<group>";
+		};
+		9377601E2584F47700DCD6E4 /* ResourceJSon */ = {
+			isa = PBXGroup;
+			children = (
+				936E2CC725826549003B634F /* Sample.json */,
+				936E2CB425826301003B634F /* Ichigo Kurosaki Bankai.json */,
+				93775FEF2584EAEC00DCD6E4 /* Aang from Avatar.json */,
+				93775F602584E97900DCD6E4 /* Anime boy.json */,
+				93775F652584E98100DCD6E4 /* Anime cat.json */,
+				93775F6A2584E98A00DCD6E4 /* Anime dog.json */,
+				93775F6F2584E99100DCD6E4 /* Anime girl.json */,
+				93775F742584E9A400DCD6E4 /* Ash Ketchum.json */,
+				93775F792584E9AE00DCD6E4 /* Bishounen.json */,
+				93775F7E2584E9B500DCD6E4 /* Bulbasaur Pokemon.json */,
+				93775F832584E9BD00DCD6E4 /* Deidara from Naruto.json */,
+				93775F882584E9C500DCD6E4 /* Detective Conan.json */,
+				93775F8D2584E9CD00DCD6E4 /* Doraemon.json */,
+				93775F922584E9D400DCD6E4 /* Eevee the Pokemon.json */,
+				93775F9C2584E9E600DCD6E4 /* Gingka Hagane from Beyblade.json */,
+				93775F972584E9E000DCD6E4 /* Gaara.json */,
+				93775FA12584E9F000DCD6E4 /* Gohan.json */,
+				93775FA62584E9F700DCD6E4 /* Goku Super Saiyan.json */,
+				93775FAB2584E9FF00DCD6E4 /* Hatsune Miku.json */,
+				93775FB02584EA0600DCD6E4 /* Hello Kitty.json */,
+				93775FB52584EA1100DCD6E4 /* Inuyasha.json */,
+				93775FBA2584EA1700DCD6E4 /* Itachi Uchiha.json */,
+				93775FBF2584EA1E00DCD6E4 /* Kagami Hiiragi.json */,
+				93775FC42584EA2500DCD6E4 /* Kagome Higurashi.json */,
+				93775FC92584EA3900DCD6E4 /* Kakashi Hatake.json */,
+				93775FCE2584EA4100DCD6E4 /* Konata Izumi.json */,
+				93775FD32584EA4B00DCD6E4 /* Korra.json */,
+				93775FD82584EA5100DCD6E4 /* Link from Legend of Zelda.json */,
+				93775FDD2584EA5900DCD6E4 /* Pikachu Pokémon.json */,
+				93775FE22584EA6400DCD6E4 /* Sasuke.json */,
+				93775FE72584EA6A00DCD6E4 /* Toshiro Hitsugaya.json */,
+			);
+			path = ResourceJSon;
+			sourceTree = "<group>";
+		};
 		93ACC02725830AE80066B1E1 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +457,7 @@
 		93ACC09E258322DA0066B1E1 /* StepDetail */ = {
 			isa = PBXGroup;
 			children = (
+				93775F502584E66900DCD6E4 /* Cell */,
 				93ACC09F258322F50066B1E1 /* StepDetail.swift */,
 				93ACC0A0258322F50066B1E1 /* StepDetail.xib */,
 			);
@@ -465,29 +582,57 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93775F662584E98100DCD6E4 /* Anime cat.json in Resources */,
+				93775FD42584EA4B00DCD6E4 /* Korra.json in Resources */,
 				936E2CBC25826302003B634F /* How to Draw Female Body.json in Resources */,
+				9377600F2584F36E00DCD6E4 /* Step by Step.json in Resources */,
 				9371E6D9257BA8F000F0A54F /* LaunchScreen.storyboard in Resources */,
-				93ACC08F25831E850066B1E1 /* Step by Step.json in Resources */,
+				93775F752584E9A400DCD6E4 /* Ash Ketchum.json in Resources */,
+				93775FE82584EA6A00DCD6E4 /* Toshiro Hitsugaya.json in Resources */,
+				93775F542584E68900DCD6E4 /* StepDetailCell.xib in Resources */,
+				93775F982584E9E000DCD6E4 /* Gaara.json in Resources */,
+				93775F8E2584E9CD00DCD6E4 /* Doraemon.json in Resources */,
 				936E2CC025826302003B634F /* Ichigo Kurosaki Bankai.json in Resources */,
-				9371E761257BAE5900F0A54F /* TutorialsVC.xib in Resources */,
 				936E2CBA25826302003B634F /* How to Draw Various Facial Expressions.json in Resources */,
 				936E2CBD25826302003B634F /* How to Draw Round Eyes.json in Resources */,
-				93696FB92580F68A00BFDFB6 /* Anime boy.json in Resources */,
+				93775F9D2584E9E600DCD6E4 /* Gingka Hagane from Beyblade.json in Resources */,
+				93775FA22584E9F000DCD6E4 /* Gohan.json in Resources */,
+				93775FC02584EA1E00DCD6E4 /* Kagami Hiiragi.json in Resources */,
 				9371E777257BB50D00F0A54F /* StepCell.xib in Resources */,
 				936E2CC125826302003B634F /* How to Draw Male Body.json in Resources */,
 				936E2CB825826302003B634F /* How to Draw Male Eyes.json in Resources */,
+				93775FB62584EA1100DCD6E4 /* Inuyasha.json in Resources */,
+				93775F932584E9D400DCD6E4 /* Eevee the Pokemon.json in Resources */,
 				9371E76C257BAE7400F0A54F /* BookMarks.xib in Resources */,
+				93775FCA2584EA3900DCD6E4 /* Kakashi Hatake.json in Resources */,
 				936E2CC225826302003B634F /* How to Draw Hair.json in Resources */,
+				937760142584F38100DCD6E4 /* Tutorials.json in Resources */,
 				9371E6D6257BA8F000F0A54F /* Assets.xcassets in Resources */,
-				93696FB42580F61E00BFDFB6 /* Aang from Avatar.json in Resources */,
+				93775F702584E99100DCD6E4 /* Anime girl.json in Resources */,
 				936E2CC825826549003B634F /* Sample.json in Resources */,
+				93775F6B2584E98A00DCD6E4 /* Anime dog.json in Resources */,
 				936E2CB925826302003B634F /* How to Draw Sharp Eyes.json in Resources */,
+				93775F7A2584E9AE00DCD6E4 /* Bishounen.json in Resources */,
+				93775F7F2584E9B500DCD6E4 /* Bulbasaur Pokemon.json in Resources */,
+				93775FDE2584EA5900DCD6E4 /* Pikachu Pokémon.json in Resources */,
+				93775FE32584EA6400DCD6E4 /* Sasuke.json in Resources */,
+				93775FC52584EA2500DCD6E4 /* Kagome Higurashi.json in Resources */,
+				93775F842584E9BD00DCD6E4 /* Deidara from Naruto.json in Resources */,
 				936E2CBF25826302003B634F /* How to Draw Chibi.json in Resources */,
+				93775F892584E9C500DCD6E4 /* Detective Conan.json in Resources */,
 				9371E6D1257BA8EE00F0A54F /* Main.storyboard in Resources */,
 				93ACC0A2258322F50066B1E1 /* StepDetail.xib in Resources */,
+				93775FBB2584EA1700DCD6E4 /* Itachi Uchiha.json in Resources */,
 				936E2CBB25826302003B634F /* How to Draw Female Eyes.json in Resources */,
+				93775FB12584EA0600DCD6E4 /* Hello Kitty.json in Resources */,
+				93775FD92584EA5100DCD6E4 /* Link from Legend of Zelda.json in Resources */,
 				936E2CBE25826302003B634F /* How to Draw Clothes.json in Resources */,
+				93775FF02584EAEC00DCD6E4 /* Aang from Avatar.json in Resources */,
 				936E2CC325826302003B634F /* How to Draw Nose and Mouth.json in Resources */,
+				93775FCF2584EA4100DCD6E4 /* Konata Izumi.json in Resources */,
+				93775FA72584E9F700DCD6E4 /* Goku Super Saiyan.json in Resources */,
+				93775F612584E97900DCD6E4 /* Anime boy.json in Resources */,
+				93775FAC2584E9FF00DCD6E4 /* Hatsune Miku.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,18 +761,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				9371E74E257BAD9300F0A54F /* HomeTabbar.swift in Sources */,
+				93775F4C2584E2E700DCD6E4 /* PropertyWapper.swift in Sources */,
 				9371E755257BAE2F00F0A54F /* StepByStepVC.swift in Sources */,
 				93ACC0972583207E0066B1E1 /* UIView+Extension.swift in Sources */,
 				9371E6CE257BA8EE00F0A54F /* ViewController.swift in Sources */,
 				93ACC02925830AFB0066B1E1 /* ReadJSON.swift in Sources */,
 				9371E6CA257BA8EE00F0A54F /* AppDelegate.swift in Sources */,
 				9371E76B257BAE7400F0A54F /* BookMarks.swift in Sources */,
+				93775FF82584F19C00DCD6E4 /* String+Extension.swift in Sources */,
 				9371E760257BAE5900F0A54F /* TutorialsVC.swift in Sources */,
 				93ACC0A1258322F50066B1E1 /* StepDetail.swift in Sources */,
 				93ACC03225830DF40066B1E1 /* StepModel.swift in Sources */,
 				9371E6D4257BA8EE00F0A54F /* AnimeDraw.xcdatamodeld in Sources */,
 				9371E749257BAD6800F0A54F /* ViewController+Extension.swift in Sources */,
 				9371E6CC257BA8EE00F0A54F /* SceneDelegate.swift in Sources */,
+				93775F532584E68900DCD6E4 /* StepDetailCell.swift in Sources */,
 				9371E776257BB50D00F0A54F /* StepCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
