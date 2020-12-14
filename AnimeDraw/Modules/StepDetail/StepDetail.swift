@@ -11,7 +11,7 @@ import RxSwift
 import Kingfisher
 
 class StepDetail: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     @VariableReplay private var listAnime: [StepModel] = []
@@ -44,8 +44,16 @@ extension StepDetail {
     private func setupRX() {
         self.$listAnime.asObservable()
             .bind(to: collectionView.rx.items(cellIdentifier: StepDetailCell.identifier, cellType: StepDetailCell.self)) { row, data, cell in
+                let attrs1 = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18),
+                              NSAttributedString.Key.foregroundColor : UIColor.black]
+                let attrs2 = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 15),
+                              NSAttributedString.Key.foregroundColor : UIColor.black]
+                let attributedString1 = NSMutableAttributedString(string:"Step \(row + 1): ", attributes:attrs1)
+                let attributedString2 = NSMutableAttributedString(string:data.text ?? "", attributes:attrs2)
+                
+                attributedString1.append(attributedString2)
+                cell.lbTitle.attributedText = attributedString1
                 cell.img.image = UIImage(named: data.image ?? "")
-                cell.lbTitle.text = data.text
                 cell.hTitle.constant = (data.text ?? "").getTextSizeNoteView(fontSize: 15, width: self.view.bounds.width, height: 1000).height + 50
             }.disposed(by: disposeBag)
         

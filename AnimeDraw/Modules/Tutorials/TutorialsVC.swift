@@ -16,7 +16,7 @@ import SnapKit
 class TutorialsVC: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    private var listAnime: PublishSubject<[StepModel]> = PublishSubject.init()
+    @VariableReplay private var listAnime: [StepModel] = []
     private let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +42,7 @@ extension TutorialsVC {
         self.navigationItem.title = "Tutorials"
     }
     private func setupRX() {
-        self.listAnime.asObservable()
+        self.$listAnime.asObservable()
             .bind(to: collectionView.rx.items(cellIdentifier: StepCell.identifier, cellType: StepCell.self)) { row, data, cell in
                 cell.lbName.text = data.text
                 cell.lbName.sizeToFit()
@@ -56,7 +56,7 @@ extension TutorialsVC {
                 }
                 switch result {
                 case .success(let data):
-                    wSelf.listAnime.onNext(data)
+                    wSelf.listAnime = data
                 case .failure(let err):
                     print("\(err)")
                 }
@@ -68,7 +68,9 @@ extension TutorialsVC {
             guard let wSelf = self else {
                 return
             }
-            let vc = StepDetail(nibName: "StepDetail", bundle: nil)
+            let vc = TutorialDetail(nibName: "TutorialDetail", bundle: nil)
+            let item = wSelf.listAnime[idx.row]
+            vc.titleTutorial = item.text ?? ""
             wSelf.navigationController?.pushViewController(vc, animated: true)
         }.disposed(by: disposeBag)
         
