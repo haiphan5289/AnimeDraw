@@ -10,12 +10,14 @@ import RealmSwift
 
 
 class StepByStepReaml: Object {
-    @objc dynamic var product:Data?
+    @objc dynamic var product: Data?
+    @objc dynamic var isStep: Bool = false
 
-    init(_ model: StepModel) {
+    init(model: StepModel, isStep: Bool) {
         super.init()
         do {
             product = try model.toData()
+            self.isStep = isStep
         } catch let err {
             print("\(err.localizedDescription)")
         }

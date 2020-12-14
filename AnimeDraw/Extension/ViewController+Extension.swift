@@ -150,3 +150,16 @@ extension UIImageView {
     }
     
 }
+extension UIViewController {
+    public func showAlert(msg: String, buttonTitle: [String], completion: ((Int) -> Void)? = nil) {
+        let alert: UIAlertController = UIAlertController(title: "Notifcation",
+                                                         message: msg, preferredStyle: .alert)
+        buttonTitle.enumerated().forEach { (title) in
+            let bt: UIAlertAction = UIAlertAction(title: title.element, style: .default) { (action) in
+                completion?(title.offset)
+            }
+            alert.addAction(bt)
+        }
+        self.present(alert, animated: true, completion: nil)
+    }
+}

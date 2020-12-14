@@ -48,7 +48,7 @@ extension TutorialDetail {
             }
             let vc = DisplayTutorialVC(nibName: "DisplayTutorialVC", bundle: nil)
             let item = wSelf.listImage[idx.row]
-            vc.titleDisplay = item.text ?? ""
+            vc.anime = item
             wSelf.navigationController?.pushViewController(vc, animated: true)
         }.disposed(by: disposeBag)
         

@@ -52,6 +52,13 @@ class HomeTabbar: UITabBarController {
 extension HomeTabbar {
     private func visualize() {
         self.view.backgroundColor = .white
+        viewControllers?.forEach({ (v) in
+            if let nc = v as? UINavigationController {
+                if let homeVC = nc.viewControllers.first as? BookMarks {
+                    homeVC.loadViewIfNeeded()
+                }
+            }
+        })
         
     }
 }

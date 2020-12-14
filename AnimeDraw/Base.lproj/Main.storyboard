@@ -127,10 +127,10 @@
             </objects>
             <point key="canvasLocation" x="2313.04347826087" y="-587.27678571428567"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Tabbar-->
         <scene sceneID="1WV-NL-ewL">
             <objects>
-                <tabBarController storyboardIdentifier="HomeTabbar" id="9QP-jC-L2Q" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeTabbar" id="9QP-jC-L2Q" customClass="HomeTabbar" customModule="AnimeDraw" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1fC-yF-6zH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

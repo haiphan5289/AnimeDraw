@@ -17,11 +17,12 @@ class BookMarks: UIViewController {
     @IBOutlet weak var segmentControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     private var pageVC: UIPageViewController = UIPageViewController(transitionStyle: .pageCurl,
-                                                                    navigationOrientation: .horizontal, options: [:])
-    @VariableReplay private var listStep: [StepModel] = []
+                                                                    navigationOrientation: .horizontal,
+                                                                    options: [:])
+    
     private var controllers: [UIViewController] = []
     private(set) lazy var step: UIViewController = {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"BookMarks") as! BookMarks
+        let vc = BMStepByStep(nibName: "BMStepByStep", bundle: nil)
         return vc
     }()
     private(set) lazy var tutorial: UIViewController = {
@@ -51,15 +52,13 @@ extension BookMarks {
     private func visualize() {
         self.view.addSubview(pageVC.view)
         pageVC.view.snp.makeConstraints { (make) in
-            make.left.right.bottom.equalToSuperview()
-            make.top.equalTo(self.view.safeAreaLayoutGuide)
+            make.left.right.equalToSuperview()
+            make.top.bottom.equalTo(self.view.safeAreaLayoutGuide)
         }
         self.addChild(pageVC)
         pageVC.didMove(toParent: self)
         
-        self.listStep = RealmManage.share.getStepByStep()
-        tableView.delegate = self
-        tableView.register(BMStepCell.nib, forCellReuseIdentifier: BMStepCell.identifier)
+        pageVC.setViewControllers([self.step], direction: .forward, animated: true, completion: nil)
     }
     private func setupRX() {
         segmentControl.rx
@@ -67,34 +66,8 @@ extension BookMarks {
             .skip(1)
             .bind (onNext: { index in
                 self.pageVC.setViewControllers( (index == 0) ? [self.step] : [self.tutorial] ,
-                                            direction: .forward,
+                                                direction: (index == 0) ? .reverse : .forward,
                                             animated: true, completion: nil)
         }).disposed(by: disposeBag)
-        
-        self.$listStep.asObservable()
-            .bind(to: tableView.rx.items(cellIdentifier: BMStepCell.identifier, cellType: BMStepCell.self)) {(row, element, cell) in
-                cell.lbTitle.text = element.text
-        }.disposed(by: disposeBag)
-        
-        tableView.rx.itemSelected.bind { [weak self] (idx) in
-            guard let wSelf = self else {
-                return 
-            }
-            let vc = StepDetail(nibName: "StepDetail", bundle: nil)
-            let item = wSelf.listStep[idx.row]
-            vc.anime = item
-            vc.hidesBottomBarWhenPushed = true
-            wSelf.navigationController?.pushViewController(vc, animated: true)
-        }.disposed(by: disposeBag)
-        
     }
-}
-extension BookMarks: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0.1
-    }
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0.1
-    }
-    
 }

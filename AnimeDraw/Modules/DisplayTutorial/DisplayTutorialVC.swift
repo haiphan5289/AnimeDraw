@@ -12,8 +12,9 @@ import RxSwift
 class DisplayTutorialVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    var titleDisplay: String = ""
+    var anime: StepModel?
     @VariableReplay private var listImage: [DisplayTutorialModel] = []
+    @VariableReplay private var listTutorialRealm: [StepModel] = []
     private let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +33,38 @@ class DisplayTutorialVC: UIViewController {
 }
 extension DisplayTutorialVC {
     private func visualize() {
-        self.navigationItem.title = self.titleDisplay
+        self.navigationItem.title = self.anime?.text
         tableView.delegate = self
         tableView.register(DisplayTutorialCell.nib, forCellReuseIdentifier: DisplayTutorialCell.identifier)
+        
+        let btPlus: UIButton = UIButton(frame: CGRect(origin: .zero, size: CGSize(width: 50, height: 50)))
+        btPlus.setImage(UIImage(systemName: "plus"), for: .normal)
+        btPlus.setTitleColor(.black, for: .normal)
+        btPlus.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        let rightBarButton = UIBarButtonItem(customView: btPlus)
+        navigationItem.rightBarButtonItem = rightBarButton
+        btPlus.rx.tap.bind { [weak self] _ in
+            guard let wSelf = self, let item = wSelf.anime else {
+                return
+            }
+            wSelf.showAlert(msg: "Do you want to add in BookMarks", buttonTitle: ["Cancel", "OK"]) { (index) in
+                if index == 1 {
+                    RealmManage.share.addTutorial(model: item)
+                }
+            }
+            
+        }.disposed(by: disposeBag)
+        
+        self.listTutorialRealm = RealmManage.share.getTutorial()
+        
+        self.$listTutorialRealm.asObservable().bind { [weak self] (l) in
+            guard let wSelf = self, let anime = wSelf.anime else {
+                return
+            }
+            for i in l where i.text == anime.text {
+                btPlus.isHidden = true
+            }
+        }.disposed(by: disposeBag)
     }
     private func setupRX() {
         self.$listImage.asObservable()
@@ -56,7 +86,11 @@ extension DisplayTutorialVC {
                 }
         }.disposed(by: disposeBag)
         
-        ReadJSON.shared.readJSONObs(offType: [DisplayTutorialModel].self, name: self.titleDisplay, type: TypeJSON.json.rawValue)
+        guard let title = self.anime?.text else {
+            return
+        }
+        
+        ReadJSON.shared.readJSONObs(offType: [DisplayTutorialModel].self, name: title, type: TypeJSON.json.rawValue)
             .subscribe { [weak self] (result) in
                 guard let wSelf = self else {
                     return
@@ -65,7 +99,7 @@ extension DisplayTutorialVC {
                 case .success(let data):
                     wSelf.listImage = data
                 case .failure(let err):
-                    print("\(err)")
+                    print("\(err.localizedDescription)")
                 }
             } onError: { (err) in
                 print("\(err.localizedDescription)")

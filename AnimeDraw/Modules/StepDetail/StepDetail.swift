@@ -15,6 +15,7 @@ class StepDetail: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     @VariableReplay private var listAnime: [StepModel] = []
+    @VariableReplay private var listStep: [StepModel] = []
     private let disposeBag = DisposeBag()
     var anime: StepModel?
     override func viewDidLoad() {
@@ -51,7 +52,23 @@ extension StepDetail {
             guard let wSelf = self, let item = wSelf.anime else {
                 return
             }
-            RealmManage.share.addStep(model: item)
+            wSelf.showAlert(msg: "Do you want to add in BookMarks", buttonTitle: ["Cancel", "OK"]) { (index) in
+                if index == 1 {
+                    RealmManage.share.addStep(model: item)
+                }
+            }
+            
+        }.disposed(by: disposeBag)
+        
+        self.listStep = RealmManage.share.getStepByStep()
+        
+        self.$listStep.asObservable().bind { [weak self] (l) in
+            guard let wSelf = self, let anime = wSelf.anime else {
+                return
+            }
+            for i in l where i.text == anime.text {
+                btPlus.isHidden = true
+            }
         }.disposed(by: disposeBag)
     }
     private func setupRX() {

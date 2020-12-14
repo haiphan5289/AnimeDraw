@@ -9,6 +9,11 @@ import Foundation
 import RealmSwift
 import Realm
 
+enum PushNotificationKeys: String {
+    case addStep
+    case addTutorial
+}
+
 class RealmManage {
     static var share = RealmManage()
     var realm : Realm!
@@ -36,6 +41,13 @@ class RealmManage {
         let list = realm.objects(StepByStepReaml.self).toArray(ofType: StepByStepReaml.self)
         return list
     }
+    func addStep(model: StepModel) {
+        let itemAdd = StepByStepReaml.init(model: model, isStep: true)
+        try! realm.write {
+            realm.add(itemAdd)
+            NotificationCenter.default.post(name: NSNotification.Name(PushNotificationKeys.addStep.rawValue), object: nil, userInfo: nil)
+        }
+    }
     
     func getStepByStep() -> [StepModel] {
         let l = self.getStepRealm()
@@ -44,17 +56,38 @@ class RealmManage {
             guard let model = m.product?.toCodableObject() as StepModel? else{
                 return []
             }
-            listStep.append(model)
+            if m.isStep {
+                listStep.append(model)
+            }
+        }
+        return listStep
+    }
+    private func getTutorialRealm() -> [StepByStepReaml] {
+        let list = realm.objects(StepByStepReaml.self).toArray(ofType: StepByStepReaml.self)
+        return list
+    }
+    
+    func addTutorial(model: StepModel) {
+        let itemAdd = StepByStepReaml.init(model: model, isStep: false)
+        try! realm.write {
+            realm.add(itemAdd)
+            NotificationCenter.default.post(name: NSNotification.Name(PushNotificationKeys.addStep.rawValue), object: nil, userInfo: nil)
+        }
+    }
+    func getTutorial() -> [StepModel] {
+        let l = self.getTutorialRealm()
+        var listStep: [StepModel] = []
+        for m in l {
+            guard let model = m.product?.toCodableObject() as StepModel? else{
+                return []
+            }
+            if !m.isStep {
+                listStep.append(model)
+            }
         }
         return listStep
     }
     
-    func addStep(model: StepModel) {
-        let itemAdd = StepByStepReaml.init(model)
-        try! realm.write {
-            realm.add(itemAdd)
-        }
-    }
 }
 extension Results {
     func toArray<T>(ofType: T.Type) -> [T] {
