@@ -36,5 +36,6 @@ pod 'ReadMoreTextView'
 pod 'SkeletonView'
 pod "ViewAnimator"
 pod 'RealmSwift'
+pod 'AnimatedCollectionViewLayout'
 
 end

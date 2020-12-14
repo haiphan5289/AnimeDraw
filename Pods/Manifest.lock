@@ -2,6 +2,7 @@ PODS:
   - Alamofire (5.2.2)
   - AlamofireImage (4.1.0):
     - Alamofire (~> 5.1)
+  - AnimatedCollectionViewLayout (1.1.0)
   - Cosmos (23.0.0)
   - DZNEmptyDataSet (1.8.1)
   - Eureka (5.3.1)
@@ -35,6 +36,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.2.2)
   - AlamofireImage (~> 4.1.0)
+  - AnimatedCollectionViewLayout
   - Cosmos
   - DZNEmptyDataSet
   - Eureka
@@ -57,6 +59,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireImage
+    - AnimatedCollectionViewLayout
     - Cosmos
     - DZNEmptyDataSet
     - Eureka
@@ -80,6 +83,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  AnimatedCollectionViewLayout: 0c1a38c4be115c525c887be183fc91ef65737c5d
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   Eureka: 859877ab1e85661b6b7e810015d430e937d9cc7d
@@ -100,6 +104,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   ViewAnimator: 16435576cd44fca0b0d63147d5031fd3e91d295a
 
-PODFILE CHECKSUM: f1f718844742d111bca4cf3a3639398cc154bcb8
+PODFILE CHECKSUM: 56948642be581d00c8e510fc35b9b77ed2eed704
 
 COCOAPODS: 1.9.1
