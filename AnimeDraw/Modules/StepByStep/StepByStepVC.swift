@@ -32,14 +32,10 @@ class StepByStepVC: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = false
         self.hidesBottomBarWhenPushed = false
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-//            self.navigationController?.navigationBar.prefersLargeTitles = true
-//            self.navigationController?.navigationBar.setNeedsLayout()
-//            self.navigationController?.navigationBar.layoutIfNeeded()
-//            self.navigationController?.navigationBar.setNeedsDisplay()
-//            _ = self.navigationController?.view.snapshotView(afterScreenUpdates: true)
-//        }
+        guard let navigationController = navigationController else { return }
+            navigationController.navigationBar.prefersLargeTitles = true
+            navigationItem.largeTitleDisplayMode = .automatic
+            navigationController.navigationBar.sizeToFit()
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -82,7 +78,7 @@ extension StepByStepVC {
             }
             let vc = StepDetail(nibName: "StepDetail", bundle: nil)
             let item = self?.listAnime[idx.row]
-            vc.titleAnime = item?.text ?? ""
+            vc.anime = item
             vc.hidesBottomBarWhenPushed = true
             wSelf.navigationController?.pushViewController(vc, animated: true)
         }.disposed(by: disposeBag)

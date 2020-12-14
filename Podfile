@@ -35,5 +35,6 @@ pod "KWVerificationCodeView", '0.3.0'
 pod 'ReadMoreTextView'
 pod 'SkeletonView'
 pod "ViewAnimator"
+pod 'RealmSwift'
 
 end

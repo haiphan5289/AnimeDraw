@@ -27,7 +27,10 @@ class TutorialsVC: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = false
         self.hidesBottomBarWhenPushed = false
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+        guard let navigationController = navigationController else { return }
+            navigationController.navigationBar.prefersLargeTitles = true
+            navigationItem.largeTitleDisplayMode = .automatic
+            navigationController.navigationBar.sizeToFit()
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)

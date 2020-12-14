@@ -19,6 +19,13 @@
 		2E9921B725870D0D0004A3C8 /* DisplayTutorialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921B525870D0D0004A3C8 /* DisplayTutorialCell.swift */; };
 		2E9921B825870D0D0004A3C8 /* DisplayTutorialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9921B625870D0D0004A3C8 /* DisplayTutorialCell.xib */; };
 		2E9921C125870EB90004A3C8 /* DisplayTutorialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921C025870EB90004A3C8 /* DisplayTutorialModel.swift */; };
+		2E9921CE258726300004A3C8 /* BookMarksTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921CC258726300004A3C8 /* BookMarksTutorial.swift */; };
+		2E9921CF258726300004A3C8 /* BookMarksTutorial.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9921CD258726300004A3C8 /* BookMarksTutorial.xib */; };
+		2E9921D725873E6F0004A3C8 /* RealmManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921D625873E6F0004A3C8 /* RealmManage.swift */; };
+		2E9921F9258740C00004A3C8 /* StepByStelRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921F8258740C00004A3C8 /* StepByStelRealmModel.swift */; };
+		2E992202258743670004A3C8 /* Encode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E992201258743670004A3C8 /* Encode+Extension.swift */; };
+		2E99220925874F1B0004A3C8 /* BMStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E99220725874F1B0004A3C8 /* BMStepCell.swift */; };
+		2E99220A25874F1B0004A3C8 /* BMStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E99220825874F1B0004A3C8 /* BMStepCell.xib */; };
 		936E2CB825826302003B634F /* How to Draw Male Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CAC25826300003B634F /* How to Draw Male Eyes.json */; };
 		936E2CB925826302003B634F /* How to Draw Sharp Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CAD25826300003B634F /* How to Draw Sharp Eyes.json */; };
 		936E2CBA25826302003B634F /* How to Draw Various Facial Expressions.json in Resources */ = {isa = PBXBuildFile; fileRef = 936E2CAE25826300003B634F /* How to Draw Various Facial Expressions.json */; };
@@ -46,7 +53,6 @@
 		9371E755257BAE2F00F0A54F /* StepByStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E753257BAE2F00F0A54F /* StepByStepVC.swift */; };
 		9371E760257BAE5900F0A54F /* TutorialsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E75E257BAE5900F0A54F /* TutorialsVC.swift */; };
 		9371E76B257BAE7400F0A54F /* BookMarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E769257BAE7400F0A54F /* BookMarks.swift */; };
-		9371E76C257BAE7400F0A54F /* BookMarks.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9371E76A257BAE7400F0A54F /* BookMarks.xib */; };
 		9371E776257BB50D00F0A54F /* StepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9371E774257BB50D00F0A54F /* StepCell.swift */; };
 		9371E777257BB50D00F0A54F /* StepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9371E775257BB50D00F0A54F /* StepCell.xib */; };
 		93775F4C2584E2E700DCD6E4 /* PropertyWapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93775F4B2584E2E700DCD6E4 /* PropertyWapper.swift */; };
@@ -122,6 +128,13 @@
 		2E9921B525870D0D0004A3C8 /* DisplayTutorialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTutorialCell.swift; sourceTree = "<group>"; };
 		2E9921B625870D0D0004A3C8 /* DisplayTutorialCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplayTutorialCell.xib; sourceTree = "<group>"; };
 		2E9921C025870EB90004A3C8 /* DisplayTutorialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTutorialModel.swift; sourceTree = "<group>"; };
+		2E9921CC258726300004A3C8 /* BookMarksTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarksTutorial.swift; sourceTree = "<group>"; };
+		2E9921CD258726300004A3C8 /* BookMarksTutorial.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookMarksTutorial.xib; sourceTree = "<group>"; };
+		2E9921D625873E6F0004A3C8 /* RealmManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManage.swift; sourceTree = "<group>"; };
+		2E9921F8258740C00004A3C8 /* StepByStelRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStelRealmModel.swift; sourceTree = "<group>"; };
+		2E992201258743670004A3C8 /* Encode+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encode+Extension.swift"; sourceTree = "<group>"; };
+		2E99220725874F1B0004A3C8 /* BMStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMStepCell.swift; sourceTree = "<group>"; };
+		2E99220825874F1B0004A3C8 /* BMStepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMStepCell.xib; sourceTree = "<group>"; };
 		375CF7F72C1BE34C71D51CB5 /* Pods_AnimeDraw_AnimeDrawUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeDraw_AnimeDrawUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		460D95E6532D470AF4DBA370 /* Pods_AnimeDrawTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeDrawTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F024C3140C9F72BE9063FF /* Pods_AnimeDraw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimeDraw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,7 +172,6 @@
 		9371E753257BAE2F00F0A54F /* StepByStepVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepByStepVC.swift; sourceTree = "<group>"; };
 		9371E75E257BAE5900F0A54F /* TutorialsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialsVC.swift; sourceTree = "<group>"; };
 		9371E769257BAE7400F0A54F /* BookMarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMarks.swift; sourceTree = "<group>"; };
-		9371E76A257BAE7400F0A54F /* BookMarks.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookMarks.xib; sourceTree = "<group>"; };
 		9371E774257BB50D00F0A54F /* StepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCell.swift; sourceTree = "<group>"; };
 		9371E775257BB50D00F0A54F /* StepCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StepCell.xib; sourceTree = "<group>"; };
 		93775F4B2584E2E700DCD6E4 /* PropertyWapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWapper.swift; sourceTree = "<group>"; };
@@ -300,6 +312,41 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2E9921CB258725F10004A3C8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E9921CC258726300004A3C8 /* BookMarksTutorial.swift */,
+				2E9921CD258726300004A3C8 /* BookMarksTutorial.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2E9921F6258740920004A3C8 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				2E9921F72587409C0004A3C8 /* Model */,
+				2E9921D625873E6F0004A3C8 /* RealmManage.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		2E9921F72587409C0004A3C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E9921F8258740C00004A3C8 /* StepByStelRealmModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E99220625874EFC0004A3C8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2E99220725874F1B0004A3C8 /* BMStepCell.swift */,
+				2E99220825874F1B0004A3C8 /* BMStepCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		4343032CFA6CFE9A5D532046 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +458,7 @@
 				93ACC0962583207E0066B1E1 /* UIView+Extension.swift */,
 				93775FF72584F19C00DCD6E4 /* String+Extension.swift */,
 				93775F4B2584E2E700DCD6E4 /* PropertyWapper.swift */,
+				2E992201258743670004A3C8 /* Encode+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -436,8 +484,9 @@
 		9371E768257BAE6300F0A54F /* Bookmarks */ = {
 			isa = PBXGroup;
 			children = (
+				2E99220625874EFC0004A3C8 /* Cell */,
+				2E9921CB258725F10004A3C8 /* ViewControllers */,
 				9371E769257BAE7400F0A54F /* BookMarks.swift */,
-				9371E76A257BAE7400F0A54F /* BookMarks.xib */,
 			);
 			path = Bookmarks;
 			sourceTree = "<group>";
@@ -527,6 +576,7 @@
 		93ACC02725830AE80066B1E1 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				2E9921F6258740920004A3C8 /* Realm */,
 				93ACC02825830AFB0066B1E1 /* ReadJSON.swift */,
 			);
 			path = Service;
@@ -671,6 +721,7 @@
 				93775F662584E98100DCD6E4 /* Anime cat.json in Resources */,
 				93775FD42584EA4B00DCD6E4 /* Korra.json in Resources */,
 				2E9921942587053A0004A3C8 /* TutorialDetailCell.xib in Resources */,
+				2E9921CF258726300004A3C8 /* BookMarksTutorial.xib in Resources */,
 				936E2CBC25826302003B634F /* How to Draw Female Body.json in Resources */,
 				9377600F2584F36E00DCD6E4 /* Step by Step.json in Resources */,
 				9371E6D9257BA8F000F0A54F /* LaunchScreen.storyboard in Resources */,
@@ -692,7 +743,6 @@
 				936E2CB825826302003B634F /* How to Draw Male Eyes.json in Resources */,
 				93775FB62584EA1100DCD6E4 /* Inuyasha.json in Resources */,
 				93775F932584E9D400DCD6E4 /* Eevee the Pokemon.json in Resources */,
-				9371E76C257BAE7400F0A54F /* BookMarks.xib in Resources */,
 				93775FCA2584EA3900DCD6E4 /* Kakashi Hatake.json in Resources */,
 				936E2CC225826302003B634F /* How to Draw Hair.json in Resources */,
 				937760142584F38100DCD6E4 /* Tutorials.json in Resources */,
@@ -710,6 +760,7 @@
 				936E2CBF25826302003B634F /* How to Draw Chibi.json in Resources */,
 				93775F892584E9C500DCD6E4 /* Detective Conan.json in Resources */,
 				9371E6D1257BA8EE00F0A54F /* Main.storyboard in Resources */,
+				2E99220A25874F1B0004A3C8 /* BMStepCell.xib in Resources */,
 				93ACC0A2258322F50066B1E1 /* StepDetail.xib in Resources */,
 				93775FBB2584EA1700DCD6E4 /* Itachi Uchiha.json in Resources */,
 				936E2CBB25826302003B634F /* How to Draw Female Eyes.json in Resources */,
@@ -854,8 +905,12 @@
 				2E9921932587053A0004A3C8 /* TutorialDetailCell.swift in Sources */,
 				2E9921882587045C0004A3C8 /* TutorialDetail.swift in Sources */,
 				9371E74E257BAD9300F0A54F /* HomeTabbar.swift in Sources */,
+				2E9921F9258740C00004A3C8 /* StepByStelRealmModel.swift in Sources */,
+				2E9921CE258726300004A3C8 /* BookMarksTutorial.swift in Sources */,
 				93775F4C2584E2E700DCD6E4 /* PropertyWapper.swift in Sources */,
 				9371E755257BAE2F00F0A54F /* StepByStepVC.swift in Sources */,
+				2E9921D725873E6F0004A3C8 /* RealmManage.swift in Sources */,
+				2E99220925874F1B0004A3C8 /* BMStepCell.swift in Sources */,
 				2E9921AF25870B950004A3C8 /* DisplayTutorialVC.swift in Sources */,
 				93ACC0972583207E0066B1E1 /* UIView+Extension.swift in Sources */,
 				9371E6CE257BA8EE00F0A54F /* ViewController.swift in Sources */,
@@ -871,6 +926,7 @@
 				9371E6D4257BA8EE00F0A54F /* AnimeDraw.xcdatamodeld in Sources */,
 				9371E749257BAD6800F0A54F /* ViewController+Extension.swift in Sources */,
 				9371E6CC257BA8EE00F0A54F /* SceneDelegate.swift in Sources */,
+				2E992202258743670004A3C8 /* Encode+Extension.swift in Sources */,
 				93775F532584E68900DCD6E4 /* StepDetailCell.swift in Sources */,
 				9371E776257BB50D00F0A54F /* StepCell.swift in Sources */,
 			);

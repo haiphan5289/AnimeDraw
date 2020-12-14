@@ -16,7 +16,7 @@ class StepDetail: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @VariableReplay private var listAnime: [StepModel] = []
     private let disposeBag = DisposeBag()
-    var titleAnime: String = ""
+    var anime: StepModel?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.visualize()
@@ -39,7 +39,20 @@ extension StepDetail {
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         collectionView.isPagingEnabled = true
         title = "Step by Step"
-        self.navigationItem.title = self.titleAnime
+        self.navigationItem.title = self.anime?.text
+        
+        let btPlus: UIButton = UIButton(frame: CGRect(origin: .zero, size: CGSize(width: 50, height: 50)))
+        btPlus.setImage(UIImage(systemName: "plus"), for: .normal)
+        btPlus.setTitleColor(.black, for: .normal)
+        btPlus.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        let rightBarButton = UIBarButtonItem(customView: btPlus)
+        navigationItem.rightBarButtonItem = rightBarButton
+        btPlus.rx.tap.bind { [weak self] _ in
+            guard let wSelf = self, let item = wSelf.anime else {
+                return
+            }
+            RealmManage.share.addStep(model: item)
+        }.disposed(by: disposeBag)
     }
     private func setupRX() {
         self.$listAnime.asObservable()
@@ -57,7 +70,11 @@ extension StepDetail {
                 cell.hTitle.constant = (data.text ?? "").getTextSizeNoteView(fontSize: 15, width: self.view.bounds.width, height: 1000).height + 50
             }.disposed(by: disposeBag)
         
-        ReadJSON.shared.readJSONObs(offType: [StepModel].self, name: self.titleAnime, type: TypeJSON.json.rawValue)
+        guard let title = self.anime?.text else {
+            return
+        }
+        
+        ReadJSON.shared.readJSONObs(offType: [StepModel].self, name: title, type: TypeJSON.json.rawValue)
             .subscribe { [weak self] (result) in
                 guard let wSelf = self else {
                     return
@@ -73,9 +90,6 @@ extension StepDetail {
             } onError: { (err) in
                 print("\(err.localizedDescription)")
             }.disposed(by: disposeBag)
-        
-        
-        
     }
 }
 extension StepDetail: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
