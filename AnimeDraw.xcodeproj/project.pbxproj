@@ -455,8 +455,8 @@
 			isa = PBXGroup;
 			children = (
 				2E9921A22587098B0004A3C8 /* DisplayTutorial */,
-				2E992185258704350004A3C8 /* TutorialDetail */,
 				9371E768257BAE6300F0A54F /* Bookmarks */,
+				2E992185258704350004A3C8 /* TutorialDetail */,
 				9371E75D257BAE3C00F0A54F /* Tutorials */,
 				93ACC09E258322DA0066B1E1 /* StepDetail */,
 				9371E752257BAE1900F0A54F /* StepByStep */,

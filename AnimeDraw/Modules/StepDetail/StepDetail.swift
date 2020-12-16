@@ -36,15 +36,13 @@ class StepDetail: UIViewController {
 }
 extension StepDetail {
     private func visualize() {
-        let layout = AnimatedCollectionViewLayout()
-        layout.animator = CrossFadeAttributesAnimator()
-        collectionView.collectionViewLayout = layout
         collectionView.delegate = self
         collectionView.register(StepDetailCell.nib, forCellWithReuseIdentifier: StepDetailCell.identifier)
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         collectionView.isPagingEnabled = true
-        title = "Step by Step"
-        self.navigationItem.title = self.anime?.text
+        title = self.anime?.text
+        //If this is set with tittle, vc don't show text back, it will show text "back"
+//        self.navigationItem.title = self.anime?.text
         
         let btPlus: UIButton = UIButton(frame: CGRect(origin: .zero, size: CGSize(width: 50, height: 50)))
         btPlus.setImage(UIImage(systemName: "plus"), for: .normal)
@@ -125,10 +123,6 @@ extension StepDetail: UICollectionViewDelegate, UICollectionViewDelegateFlowLayo
     }
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         self.pageControl.currentPage = indexPath.row
-        cell.alpha = 0
-        UIView.animate(withDuration: 5) {
-            cell.alpha = 1
-        }
     }
 
 }
