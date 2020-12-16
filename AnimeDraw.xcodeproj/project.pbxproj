@@ -11,6 +11,7 @@
 		2C6253979ADDFB4D3BFAB4DB /* Pods_AnimeDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F024C3140C9F72BE9063FF /* Pods_AnimeDraw.framework */; };
 		2E3B01B625875FDF000B074D /* BMStepByStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B01B425875FDF000B074D /* BMStepByStep.swift */; };
 		2E3B01B725875FDF000B074D /* BMStepByStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B01B525875FDF000B074D /* BMStepByStep.xib */; };
+		2E4916CE258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */; };
 		2E9921882587045C0004A3C8 /* TutorialDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921862587045C0004A3C8 /* TutorialDetail.swift */; };
 		2E9921892587045C0004A3C8 /* TutorialDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9921872587045C0004A3C8 /* TutorialDetail.xib */; };
 		2E9921932587053A0004A3C8 /* TutorialDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921912587053A0004A3C8 /* TutorialDetailCell.swift */; };
@@ -122,6 +123,7 @@
 		289A5361AF2796B54835FE39 /* Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig"; path = "Target Support Files/Pods-AnimeDraw-AnimeDrawUITests/Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E3B01B425875FDF000B074D /* BMStepByStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMStepByStep.swift; sourceTree = "<group>"; };
 		2E3B01B525875FDF000B074D /* BMStepByStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMStepByStep.xib; sourceTree = "<group>"; };
+		2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Drawing Buzz Cut Male Anime Hair.json"; sourceTree = "<group>"; };
 		2E9921862587045C0004A3C8 /* TutorialDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetail.swift; sourceTree = "<group>"; };
 		2E9921872587045C0004A3C8 /* TutorialDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialDetail.xib; sourceTree = "<group>"; };
 		2E9921912587053A0004A3C8 /* TutorialDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetailCell.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 				2E99219C258707DF0004A3C8 /* Bodies.json */,
 				936E2CB525826301003B634F /* How to Draw Male Body.json */,
 				936E2CB025826301003B634F /* How to Draw Female Body.json */,
+				2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */,
 			);
 			path = Bodies;
 			sourceTree = "<group>";
@@ -782,6 +785,7 @@
 				93775F842584E9BD00DCD6E4 /* Deidara from Naruto.json in Resources */,
 				936E2CBF25826302003B634F /* How to Draw Chibi.json in Resources */,
 				93775F892584E9C500DCD6E4 /* Detective Conan.json in Resources */,
+				2E4916CE258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json in Resources */,
 				9371E6D1257BA8EE00F0A54F /* Main.storyboard in Resources */,
 				2E99220A25874F1B0004A3C8 /* BMStepCell.xib in Resources */,
 				93ACC0A2258322F50066B1E1 /* StepDetail.xib in Resources */,

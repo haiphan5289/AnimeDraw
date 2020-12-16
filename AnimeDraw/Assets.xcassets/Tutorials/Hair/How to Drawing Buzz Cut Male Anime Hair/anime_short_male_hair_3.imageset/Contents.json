@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "anime_short_male_hair_3.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
