@@ -20,7 +20,9 @@ class StepByStepVC: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var navigation: UINavigationItem!
+    @IBOutlet weak var searchBar: UISearchBar!
     @VariableReplay private var listAnime: [StepModel] = []
+    @VariableReplay private var listAnimeSearch: [StepModel] = []
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -48,6 +50,7 @@ extension StepByStepVC {
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         title = "Step by Step"
         self.navigationItem.title = "Step by Step"
+        searchBar.backgroundImage = UIImage()
     }
     private func setupRX() {
         self.$listAnime.asObservable()
@@ -65,6 +68,7 @@ extension StepByStepVC {
                 switch result {
                 case .success(let data):
                     wSelf.listAnime = data
+                    wSelf.listAnimeSearch = data
                 case .failure(let err):
                     print("\(err)")
                 }
@@ -82,6 +86,15 @@ extension StepByStepVC {
             vc.hidesBottomBarWhenPushed = true
             wSelf.navigationController?.pushViewController(vc, animated: true)
         }.disposed(by: disposeBag)
+        
+        self.searchBar.rx.text.withLatestFrom(self.$listAnimeSearch) { (text, list) -> [StepModel] in
+            guard let text = text, text != "" else {
+                return list
+            }
+            return list.filter { ($0.text?.lowercased().contains(text.lowercased()) ?? false) }
+        }.bind(onNext: weakify({ (listSearch, wSelf) in
+            wSelf.listAnime = listSearch
+        })).disposed(by: disposeBag)
         
     }
 }

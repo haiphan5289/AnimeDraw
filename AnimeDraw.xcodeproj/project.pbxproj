@@ -12,6 +12,8 @@
 		2E3B01B625875FDF000B074D /* BMStepByStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B01B425875FDF000B074D /* BMStepByStep.swift */; };
 		2E3B01B725875FDF000B074D /* BMStepByStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B01B525875FDF000B074D /* BMStepByStep.xib */; };
 		2E47397E258AF27300B0180D /* Naruto.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E47397D258AF27300B0180D /* Naruto.json */; };
+		2E473986258AF95A00B0180D /* Monkey D. Luffy.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E473985258AF95A00B0180D /* Monkey D. Luffy.json */; };
+		2E47398B258AFD0100B0180D /* Roronoa Zoro.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E47398A258AFD0100B0180D /* Roronoa Zoro.json */; };
 		2E4916CE258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */; };
 		2E9921882587045C0004A3C8 /* TutorialDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921862587045C0004A3C8 /* TutorialDetail.swift */; };
 		2E9921892587045C0004A3C8 /* TutorialDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9921872587045C0004A3C8 /* TutorialDetail.xib */; };
@@ -125,6 +127,8 @@
 		2E3B01B425875FDF000B074D /* BMStepByStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMStepByStep.swift; sourceTree = "<group>"; };
 		2E3B01B525875FDF000B074D /* BMStepByStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMStepByStep.xib; sourceTree = "<group>"; };
 		2E47397D258AF27300B0180D /* Naruto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Naruto.json; sourceTree = "<group>"; };
+		2E473985258AF95A00B0180D /* Monkey D. Luffy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Monkey D. Luffy.json"; sourceTree = "<group>"; };
+		2E47398A258AFD0100B0180D /* Roronoa Zoro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Roronoa Zoro.json"; sourceTree = "<group>"; };
 		2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Drawing Buzz Cut Male Anime Hair.json"; sourceTree = "<group>"; };
 		2E9921862587045C0004A3C8 /* TutorialDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetail.swift; sourceTree = "<group>"; };
 		2E9921872587045C0004A3C8 /* TutorialDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialDetail.xib; sourceTree = "<group>"; };
@@ -540,6 +544,8 @@
 			isa = PBXGroup;
 			children = (
 				9377600E2584F36E00DCD6E4 /* Step by Step.json */,
+				2E47398A258AFD0100B0180D /* Roronoa Zoro.json */,
+				2E473985258AF95A00B0180D /* Monkey D. Luffy.json */,
 				2E47397D258AF27300B0180D /* Naruto.json */,
 				936E2CB425826301003B634F /* Ichigo Kurosaki Bankai.json */,
 				93775FEF2584EAEC00DCD6E4 /* Aang from Avatar.json */,
@@ -750,6 +756,7 @@
 				93775FD42584EA4B00DCD6E4 /* Korra.json in Resources */,
 				2E9921942587053A0004A3C8 /* TutorialDetailCell.xib in Resources */,
 				2E9921CF258726300004A3C8 /* BookMarksTutorial.xib in Resources */,
+				2E473986258AF95A00B0180D /* Monkey D. Luffy.json in Resources */,
 				936E2CBC25826302003B634F /* How to Draw Female Body.json in Resources */,
 				9377600F2584F36E00DCD6E4 /* Step by Step.json in Resources */,
 				9371E6D9257BA8F000F0A54F /* LaunchScreen.storyboard in Resources */,
@@ -778,6 +785,7 @@
 				937760142584F38100DCD6E4 /* Tutorials.json in Resources */,
 				9371E6D6257BA8F000F0A54F /* Assets.xcassets in Resources */,
 				93775F702584E99100DCD6E4 /* Anime girl.json in Resources */,
+				2E47398B258AFD0100B0180D /* Roronoa Zoro.json in Resources */,
 				936E2CC825826549003B634F /* Sample.json in Resources */,
 				93775F6B2584E98A00DCD6E4 /* Anime dog.json in Resources */,
 				936E2CB925826302003B634F /* How to Draw Sharp Eyes.json in Resources */,

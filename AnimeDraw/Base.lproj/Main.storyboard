@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9QP-jC-L2Q">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -97,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uqj-yQ-PqU">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="132" width="414" height="681"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9nM-Qs-ISA">
                                     <size key="itemSize" width="128" height="128"/>
@@ -107,20 +108,32 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <searchBar clipsSubviews="YES" contentMode="redraw" placeholder="search Anime" translatesAutoresizingMaskIntoConstraints="NO" id="Ca0-0O-CE8">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jnq-ip-UcS"/>
+                                </constraints>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3ck-Id-ZcP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3ck-Id-ZcP" firstAttribute="trailing" secondItem="uqj-yQ-PqU" secondAttribute="trailing" id="1tg-r5-ADI"/>
                             <constraint firstItem="3ck-Id-ZcP" firstAttribute="bottom" secondItem="uqj-yQ-PqU" secondAttribute="bottom" id="39t-Dg-A05"/>
+                            <constraint firstItem="Ca0-0O-CE8" firstAttribute="leading" secondItem="3ck-Id-ZcP" secondAttribute="leading" id="6vJ-YE-2Ts"/>
                             <constraint firstItem="uqj-yQ-PqU" firstAttribute="leading" secondItem="3ck-Id-ZcP" secondAttribute="leading" id="CpJ-75-x7c"/>
-                            <constraint firstItem="uqj-yQ-PqU" firstAttribute="top" secondItem="3ck-Id-ZcP" secondAttribute="top" id="rX1-ua-lyP"/>
+                            <constraint firstItem="Ca0-0O-CE8" firstAttribute="top" secondItem="3ck-Id-ZcP" secondAttribute="top" id="OKB-jI-ygK"/>
+                            <constraint firstItem="Ca0-0O-CE8" firstAttribute="trailing" secondItem="3ck-Id-ZcP" secondAttribute="trailing" id="qb0-Sm-2LH"/>
+                            <constraint firstItem="uqj-yQ-PqU" firstAttribute="top" secondItem="Ca0-0O-CE8" secondAttribute="bottom" id="xv4-9G-aNs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="v7z-AF-BjS"/>
                     <connections>
                         <outlet property="collectionView" destination="uqj-yQ-PqU" id="fjJ-I8-1nd"/>
                         <outlet property="navigation" destination="v7z-AF-BjS" id="5N6-sf-PXz"/>
+                        <outlet property="searchBar" destination="Ca0-0O-CE8" id="GMv-Kl-LGq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIK-XD-JGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

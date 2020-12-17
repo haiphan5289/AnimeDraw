@@ -142,9 +142,17 @@
         "image" : "Toshiro Hitsugaya",
         "text" : "Toshiro Hitsugaya"
     },
-    
     {
         "image" : "Naruto",
         "text" : "Naruto"
+    },
+    {
+        "image" : "draw-monkey-d-luffy-19",
+        "text" : "Monkey D. Luffy"
+    },
+    {
+        "image" : "how_draw_roronoa-zoro_one_piece_10",
+        "text" : "Roronoa Zoro"
     }
+    
 ]
