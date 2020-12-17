@@ -11,6 +11,7 @@
 		2C6253979ADDFB4D3BFAB4DB /* Pods_AnimeDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F024C3140C9F72BE9063FF /* Pods_AnimeDraw.framework */; };
 		2E3B01B625875FDF000B074D /* BMStepByStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B01B425875FDF000B074D /* BMStepByStep.swift */; };
 		2E3B01B725875FDF000B074D /* BMStepByStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B01B525875FDF000B074D /* BMStepByStep.xib */; };
+		2E47397E258AF27300B0180D /* Naruto.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E47397D258AF27300B0180D /* Naruto.json */; };
 		2E4916CE258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */; };
 		2E9921882587045C0004A3C8 /* TutorialDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921862587045C0004A3C8 /* TutorialDetail.swift */; };
 		2E9921892587045C0004A3C8 /* TutorialDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9921872587045C0004A3C8 /* TutorialDetail.xib */; };
@@ -123,6 +124,7 @@
 		289A5361AF2796B54835FE39 /* Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig"; path = "Target Support Files/Pods-AnimeDraw-AnimeDrawUITests/Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E3B01B425875FDF000B074D /* BMStepByStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMStepByStep.swift; sourceTree = "<group>"; };
 		2E3B01B525875FDF000B074D /* BMStepByStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMStepByStep.xib; sourceTree = "<group>"; };
+		2E47397D258AF27300B0180D /* Naruto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Naruto.json; sourceTree = "<group>"; };
 		2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Drawing Buzz Cut Male Anime Hair.json"; sourceTree = "<group>"; };
 		2E9921862587045C0004A3C8 /* TutorialDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetail.swift; sourceTree = "<group>"; };
 		2E9921872587045C0004A3C8 /* TutorialDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialDetail.xib; sourceTree = "<group>"; };
@@ -538,32 +540,7 @@
 			isa = PBXGroup;
 			children = (
 				9377600E2584F36E00DCD6E4 /* Step by Step.json */,
-			);
-			path = StepByStep;
-			sourceTree = "<group>";
-		};
-		93775FFD2584F31000DCD6E4 /* Tutorials */ = {
-			isa = PBXGroup;
-			children = (
-				937760132584F38100DCD6E4 /* Tutorials.json */,
-				2E99219B258707A40004A3C8 /* Bodies */,
-				2E9921A1258709150004A3C8 /* Chibi Characters */,
-				936E2CB225826301003B634F /* How to Draw Clothes.json */,
-				936E2CAF25826300003B634F /* How to Draw Female Eyes.json */,
-				936E2CB625826302003B634F /* How to Draw Hair.json */,
-				936E2CAC25826300003B634F /* How to Draw Male Eyes.json */,
-				936E2CB725826302003B634F /* How to Draw Nose and Mouth.json */,
-				936E2CB125826301003B634F /* How to Draw Round Eyes.json */,
-				936E2CAD25826300003B634F /* How to Draw Sharp Eyes.json */,
-				936E2CAE25826300003B634F /* How to Draw Various Facial Expressions.json */,
-			);
-			path = Tutorials;
-			sourceTree = "<group>";
-		};
-		9377601E2584F47700DCD6E4 /* ResourceJSon */ = {
-			isa = PBXGroup;
-			children = (
-				936E2CC725826549003B634F /* Sample.json */,
+				2E47397D258AF27300B0180D /* Naruto.json */,
 				936E2CB425826301003B634F /* Ichigo Kurosaki Bankai.json */,
 				93775FEF2584EAEC00DCD6E4 /* Aang from Avatar.json */,
 				93775F602584E97900DCD6E4 /* Anime boy.json */,
@@ -594,6 +571,32 @@
 				93775FDD2584EA5900DCD6E4 /* Pikachu Pokémon.json */,
 				93775FE22584EA6400DCD6E4 /* Sasuke.json */,
 				93775FE72584EA6A00DCD6E4 /* Toshiro Hitsugaya.json */,
+			);
+			path = StepByStep;
+			sourceTree = "<group>";
+		};
+		93775FFD2584F31000DCD6E4 /* Tutorials */ = {
+			isa = PBXGroup;
+			children = (
+				937760132584F38100DCD6E4 /* Tutorials.json */,
+				2E99219B258707A40004A3C8 /* Bodies */,
+				2E9921A1258709150004A3C8 /* Chibi Characters */,
+				936E2CB225826301003B634F /* How to Draw Clothes.json */,
+				936E2CAF25826300003B634F /* How to Draw Female Eyes.json */,
+				936E2CB625826302003B634F /* How to Draw Hair.json */,
+				936E2CAC25826300003B634F /* How to Draw Male Eyes.json */,
+				936E2CB725826302003B634F /* How to Draw Nose and Mouth.json */,
+				936E2CB125826301003B634F /* How to Draw Round Eyes.json */,
+				936E2CAD25826300003B634F /* How to Draw Sharp Eyes.json */,
+				936E2CAE25826300003B634F /* How to Draw Various Facial Expressions.json */,
+			);
+			path = Tutorials;
+			sourceTree = "<group>";
+		};
+		9377601E2584F47700DCD6E4 /* ResourceJSon */ = {
+			isa = PBXGroup;
+			children = (
+				936E2CC725826549003B634F /* Sample.json */,
 			);
 			path = ResourceJSon;
 			sourceTree = "<group>";
@@ -767,6 +770,7 @@
 				9371E777257BB50D00F0A54F /* StepCell.xib in Resources */,
 				936E2CC125826302003B634F /* How to Draw Male Body.json in Resources */,
 				936E2CB825826302003B634F /* How to Draw Male Eyes.json in Resources */,
+				2E47397E258AF27300B0180D /* Naruto.json in Resources */,
 				93775FB62584EA1100DCD6E4 /* Inuyasha.json in Resources */,
 				93775F932584E9D400DCD6E4 /* Eevee the Pokemon.json in Resources */,
 				93775FCA2584EA3900DCD6E4 /* Kakashi Hatake.json in Resources */,
