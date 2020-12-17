@@ -37,5 +37,7 @@ pod 'SkeletonView'
 pod "ViewAnimator"
 pod 'RealmSwift'
 pod 'AnimatedCollectionViewLayout'
+pod 'Google-Mobile-Ads-SDK'
+pod 'Firebase/Analytics'
 
 end

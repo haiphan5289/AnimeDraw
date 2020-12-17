@@ -7,13 +7,16 @@
 
 import UIKit
 import CoreData
-
+import GoogleMobileAds
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window : UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         // Override point for customization after application launch.
 //        let navigationController = UINavigationController(rootViewController: HomeTabbar())
 //        self.window = UIWindow(frame: UIScreen.main.bounds)

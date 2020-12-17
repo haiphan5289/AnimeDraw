@@ -20,6 +20,7 @@
 		2E4739AA258B349500B0180D /* ChiChi.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4739A9258B349500B0180D /* ChiChi.json */; };
 		2E4739B4258B367400B0180D /* Captain Marvel.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4739B3258B367400B0180D /* Captain Marvel.json */; };
 		2E4739BD258B394B00B0180D /* Spider Man.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4739BC258B394B00B0180D /* Spider Man.json */; };
+		2E4739E4258B48D000B0180D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E4739E3258B48D000B0180D /* GoogleService-Info.plist */; };
 		2E4916CE258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */; };
 		2E9921882587045C0004A3C8 /* TutorialDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921862587045C0004A3C8 /* TutorialDetail.swift */; };
 		2E9921892587045C0004A3C8 /* TutorialDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9921872587045C0004A3C8 /* TutorialDetail.xib */; };
@@ -141,6 +142,7 @@
 		2E4739A9258B349500B0180D /* ChiChi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChiChi.json; sourceTree = "<group>"; };
 		2E4739B3258B367400B0180D /* Captain Marvel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Captain Marvel.json"; path = "AnimeDraw/JSON/StepByStep/Dragon Ball /Captain Marvel.json"; sourceTree = SOURCE_ROOT; };
 		2E4739BC258B394B00B0180D /* Spider Man.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Spider Man.json"; sourceTree = "<group>"; };
+		2E4739E3258B48D000B0180D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Drawing Buzz Cut Male Anime Hair.json"; sourceTree = "<group>"; };
 		2E9921862587045C0004A3C8 /* TutorialDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetail.swift; sourceTree = "<group>"; };
 		2E9921872587045C0004A3C8 /* TutorialDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialDetail.xib; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 				9371E6CF257BA8EE00F0A54F /* Main.storyboard */,
 				9371E6D5257BA8F000F0A54F /* Assets.xcassets */,
 				9371E6D7257BA8F000F0A54F /* LaunchScreen.storyboard */,
+				2E4739E3258B48D000B0180D /* GoogleService-Info.plist */,
 				9371E6DA257BA8F000F0A54F /* Info.plist */,
 				9371E6D2257BA8EE00F0A54F /* AnimeDraw.xcdatamodeld */,
 			);
@@ -710,6 +713,7 @@
 			buildConfigurationList = 9371E6F3257BA8F000F0A54F /* Build configuration list for PBXNativeTarget "AnimeDraw" */;
 			buildPhases = (
 				9E712450E8FBD20F6D712DA8 /* [CP] Check Pods Manifest.lock */,
+				E0DD7F7A338D02F47BA1C89A /* [CP] Prepare Artifacts */,
 				9371E6C2257BA8EE00F0A54F /* Sources */,
 				9371E6C3257BA8EE00F0A54F /* Frameworks */,
 				9371E6C4257BA8EE00F0A54F /* Resources */,
@@ -748,6 +752,7 @@
 			buildConfigurationList = 9371E6F9257BA8F000F0A54F /* Build configuration list for PBXNativeTarget "AnimeDrawUITests" */;
 			buildPhases = (
 				04ACDBF2F1386F99EA1F0073 /* [CP] Check Pods Manifest.lock */,
+				4C4F11AC5E6FA7FD6F98940D /* [CP] Prepare Artifacts */,
 				9371E6E6257BA8F000F0A54F /* Sources */,
 				9371E6E7257BA8F000F0A54F /* Frameworks */,
 				9371E6E8257BA8F000F0A54F /* Resources */,
@@ -869,6 +874,7 @@
 				93775FB12584EA0600DCD6E4 /* Hello Kitty.json in Resources */,
 				93775FD92584EA5100DCD6E4 /* Link from Legend of Zelda.json in Resources */,
 				2E9921B025870B950004A3C8 /* DisplayTutorialVC.xib in Resources */,
+				2E4739E4258B48D000B0180D /* GoogleService-Info.plist in Resources */,
 				936E2CBE25826302003B634F /* How to Draw Clothes.json in Resources */,
 				93775FF02584EAEC00DCD6E4 /* Aang from Avatar.json in Resources */,
 				936E2CC325826302003B634F /* How to Draw Nose and Mouth.json in Resources */,
@@ -976,6 +982,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4C4F11AC5E6FA7FD6F98940D /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw-AnimeDrawUITests/Pods-AnimeDraw-AnimeDrawUITests-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw-AnimeDrawUITests/Pods-AnimeDraw-AnimeDrawUITests-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw-AnimeDrawUITests/Pods-AnimeDraw-AnimeDrawUITests-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9E712450E8FBD20F6D712DA8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -996,6 +1019,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0DD7F7A338D02F47BA1C89A /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimeDraw/Pods-AnimeDraw-artifacts.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

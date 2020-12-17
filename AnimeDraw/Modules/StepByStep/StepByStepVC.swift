@@ -11,6 +11,7 @@ import RxCocoa
 import DZNEmptyDataSet
 import ViewAnimator
 import SnapKit
+import GoogleMobileAds
 
 enum TypeJSON: String {
     case json
@@ -21,6 +22,19 @@ class StepByStepVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var navigation: UINavigationItem!
     @IBOutlet weak var searchBar: UISearchBar!
+    private let banner: GADBannerView = {
+       let b = GADBannerView()
+        //source
+//        ca-app-pub-3940256099942544/2934735716
+        //drawanime
+        //ca-app-pub-1498500288840011/7599119385
+        //ca-app-pub-1498500288840011/7599119385
+        b.adUnitID = "ca-app-pub-1498500288840011/7599119385"
+        b.load(GADRequest())
+        b.adSize = kGADAdSizeSmartBannerPortrait
+//        b.backgroundColor = .secondarySystemBackground
+        return b
+    }()
     @VariableReplay private var listAnime: [StepModel] = []
     @VariableReplay private var listAnimeSearch: [StepModel] = []
     private let disposeBag = DisposeBag()
@@ -51,6 +65,16 @@ extension StepByStepVC {
         title = "Step by Step"
         self.navigationItem.title = "Step by Step"
         searchBar.backgroundImage = UIImage()
+        
+        
+        banner.rootViewController = self
+        self.view.addSubview(banner)
+        banner.snp.makeConstraints { (make) in
+            make.left.right.equalToSuperview()
+            make.height.equalTo(50)
+            make.width.equalToSuperview()
+            make.bottom.equalTo(self.view.safeAreaLayoutGuide)
+        }
     }
     private func setupRX() {
         self.$listAnime.asObservable()
