@@ -14,6 +14,12 @@
 		2E47397E258AF27300B0180D /* Naruto.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E47397D258AF27300B0180D /* Naruto.json */; };
 		2E473986258AF95A00B0180D /* Monkey D. Luffy.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E473985258AF95A00B0180D /* Monkey D. Luffy.json */; };
 		2E47398B258AFD0100B0180D /* Roronoa Zoro.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E47398A258AFD0100B0180D /* Roronoa Zoro.json */; };
+		2E473990258B168C00B0180D /* Nami.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E47398F258B168C00B0180D /* Nami.json */; };
+		2E473995258B192E00B0180D /* Usopp.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E473994258B192E00B0180D /* Usopp.json */; };
+		2E4739A5258B2E5C00B0180D /* Bulma.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4739A4258B2E5C00B0180D /* Bulma.json */; };
+		2E4739AA258B349500B0180D /* ChiChi.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4739A9258B349500B0180D /* ChiChi.json */; };
+		2E4739B4258B367400B0180D /* Captain Marvel.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4739B3258B367400B0180D /* Captain Marvel.json */; };
+		2E4739BD258B394B00B0180D /* Spider Man.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4739BC258B394B00B0180D /* Spider Man.json */; };
 		2E4916CE258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */; };
 		2E9921882587045C0004A3C8 /* TutorialDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921862587045C0004A3C8 /* TutorialDetail.swift */; };
 		2E9921892587045C0004A3C8 /* TutorialDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9921872587045C0004A3C8 /* TutorialDetail.xib */; };
@@ -129,6 +135,12 @@
 		2E47397D258AF27300B0180D /* Naruto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Naruto.json; sourceTree = "<group>"; };
 		2E473985258AF95A00B0180D /* Monkey D. Luffy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Monkey D. Luffy.json"; sourceTree = "<group>"; };
 		2E47398A258AFD0100B0180D /* Roronoa Zoro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Roronoa Zoro.json"; sourceTree = "<group>"; };
+		2E47398F258B168C00B0180D /* Nami.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Nami.json; sourceTree = "<group>"; };
+		2E473994258B192E00B0180D /* Usopp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Usopp.json; sourceTree = "<group>"; };
+		2E4739A4258B2E5C00B0180D /* Bulma.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bulma.json; sourceTree = "<group>"; };
+		2E4739A9258B349500B0180D /* ChiChi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChiChi.json; sourceTree = "<group>"; };
+		2E4739B3258B367400B0180D /* Captain Marvel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "Captain Marvel.json"; path = "AnimeDraw/JSON/StepByStep/Dragon Ball /Captain Marvel.json"; sourceTree = SOURCE_ROOT; };
+		2E4739BC258B394B00B0180D /* Spider Man.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Spider Man.json"; sourceTree = "<group>"; };
 		2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Drawing Buzz Cut Male Anime Hair.json"; sourceTree = "<group>"; };
 		2E9921862587045C0004A3C8 /* TutorialDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetail.swift; sourceTree = "<group>"; };
 		2E9921872587045C0004A3C8 /* TutorialDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialDetail.xib; sourceTree = "<group>"; };
@@ -275,6 +287,53 @@
 				2E3B01B525875FDF000B074D /* BMStepByStep.xib */,
 			);
 			path = StepByStep;
+			sourceTree = "<group>";
+		};
+		2E473999258B193600B0180D /* One Piece */ = {
+			isa = PBXGroup;
+			children = (
+				2E473994258B192E00B0180D /* Usopp.json */,
+				2E47398F258B168C00B0180D /* Nami.json */,
+				2E47398A258AFD0100B0180D /* Roronoa Zoro.json */,
+				2E473985258AF95A00B0180D /* Monkey D. Luffy.json */,
+			);
+			path = "One Piece";
+			sourceTree = "<group>";
+		};
+		2E4739A0258B1C7300B0180D /* Dragon Ball  */ = {
+			isa = PBXGroup;
+			children = (
+				2E4739A9258B349500B0180D /* ChiChi.json */,
+				2E4739A4258B2E5C00B0180D /* Bulma.json */,
+				93775FA12584E9F000DCD6E4 /* Gohan.json */,
+				93775FA62584E9F700DCD6E4 /* Goku Super Saiyan.json */,
+			);
+			path = "Dragon Ball ";
+			sourceTree = "<group>";
+		};
+		2E4739AE258B357C00B0180D /* Marvel */ = {
+			isa = PBXGroup;
+			children = (
+				2E4739B8258B381300B0180D /* Spider Man */,
+				2E4739AF258B35F100B0180D /* Captain Marvel */,
+			);
+			path = Marvel;
+			sourceTree = "<group>";
+		};
+		2E4739AF258B35F100B0180D /* Captain Marvel */ = {
+			isa = PBXGroup;
+			children = (
+				2E4739B3258B367400B0180D /* Captain Marvel.json */,
+			);
+			path = "Captain Marvel";
+			sourceTree = "<group>";
+		};
+		2E4739B8258B381300B0180D /* Spider Man */ = {
+			isa = PBXGroup;
+			children = (
+				2E4739BC258B394B00B0180D /* Spider Man.json */,
+			);
+			path = "Spider Man";
 			sourceTree = "<group>";
 		};
 		2E992185258704350004A3C8 /* TutorialDetail */ = {
@@ -544,8 +603,9 @@
 			isa = PBXGroup;
 			children = (
 				9377600E2584F36E00DCD6E4 /* Step by Step.json */,
-				2E47398A258AFD0100B0180D /* Roronoa Zoro.json */,
-				2E473985258AF95A00B0180D /* Monkey D. Luffy.json */,
+				2E473999258B193600B0180D /* One Piece */,
+				2E4739A0258B1C7300B0180D /* Dragon Ball  */,
+				2E4739AE258B357C00B0180D /* Marvel */,
 				2E47397D258AF27300B0180D /* Naruto.json */,
 				936E2CB425826301003B634F /* Ichigo Kurosaki Bankai.json */,
 				93775FEF2584EAEC00DCD6E4 /* Aang from Avatar.json */,
@@ -562,8 +622,6 @@
 				93775F922584E9D400DCD6E4 /* Eevee the Pokemon.json */,
 				93775F9C2584E9E600DCD6E4 /* Gingka Hagane from Beyblade.json */,
 				93775F972584E9E000DCD6E4 /* Gaara.json */,
-				93775FA12584E9F000DCD6E4 /* Gohan.json */,
-				93775FA62584E9F700DCD6E4 /* Goku Super Saiyan.json */,
 				93775FAB2584E9FF00DCD6E4 /* Hatsune Miku.json */,
 				93775FB02584EA0600DCD6E4 /* Hello Kitty.json */,
 				93775FB52584EA1100DCD6E4 /* Inuyasha.json */,
@@ -761,9 +819,11 @@
 				9377600F2584F36E00DCD6E4 /* Step by Step.json in Resources */,
 				9371E6D9257BA8F000F0A54F /* LaunchScreen.storyboard in Resources */,
 				93775F752584E9A400DCD6E4 /* Ash Ketchum.json in Resources */,
+				2E473995258B192E00B0180D /* Usopp.json in Resources */,
 				2E9921892587045C0004A3C8 /* TutorialDetail.xib in Resources */,
 				93775FE82584EA6A00DCD6E4 /* Toshiro Hitsugaya.json in Resources */,
 				93775F542584E68900DCD6E4 /* StepDetailCell.xib in Resources */,
+				2E4739AA258B349500B0180D /* ChiChi.json in Resources */,
 				2E9921B825870D0D0004A3C8 /* DisplayTutorialCell.xib in Resources */,
 				93775F982584E9E000DCD6E4 /* Gaara.json in Resources */,
 				2E3B01B725875FDF000B074D /* BMStepByStep.xib in Resources */,
@@ -776,6 +836,7 @@
 				93775FC02584EA1E00DCD6E4 /* Kagami Hiiragi.json in Resources */,
 				9371E777257BB50D00F0A54F /* StepCell.xib in Resources */,
 				936E2CC125826302003B634F /* How to Draw Male Body.json in Resources */,
+				2E4739A5258B2E5C00B0180D /* Bulma.json in Resources */,
 				936E2CB825826302003B634F /* How to Draw Male Eyes.json in Resources */,
 				2E47397E258AF27300B0180D /* Naruto.json in Resources */,
 				93775FB62584EA1100DCD6E4 /* Inuyasha.json in Resources */,
@@ -791,6 +852,7 @@
 				936E2CB925826302003B634F /* How to Draw Sharp Eyes.json in Resources */,
 				93775F7A2584E9AE00DCD6E4 /* Bishounen.json in Resources */,
 				93775F7F2584E9B500DCD6E4 /* Bulbasaur Pokemon.json in Resources */,
+				2E4739BD258B394B00B0180D /* Spider Man.json in Resources */,
 				93775FDE2584EA5900DCD6E4 /* Pikachu Pokémon.json in Resources */,
 				93775FE32584EA6400DCD6E4 /* Sasuke.json in Resources */,
 				93775FC52584EA2500DCD6E4 /* Kagome Higurashi.json in Resources */,
@@ -802,6 +864,7 @@
 				2E99220A25874F1B0004A3C8 /* BMStepCell.xib in Resources */,
 				93ACC0A2258322F50066B1E1 /* StepDetail.xib in Resources */,
 				93775FBB2584EA1700DCD6E4 /* Itachi Uchiha.json in Resources */,
+				2E473990258B168C00B0180D /* Nami.json in Resources */,
 				936E2CBB25826302003B634F /* How to Draw Female Eyes.json in Resources */,
 				93775FB12584EA0600DCD6E4 /* Hello Kitty.json in Resources */,
 				93775FD92584EA5100DCD6E4 /* Link from Legend of Zelda.json in Resources */,
@@ -809,6 +872,7 @@
 				936E2CBE25826302003B634F /* How to Draw Clothes.json in Resources */,
 				93775FF02584EAEC00DCD6E4 /* Aang from Avatar.json in Resources */,
 				936E2CC325826302003B634F /* How to Draw Nose and Mouth.json in Resources */,
+				2E4739B4258B367400B0180D /* Captain Marvel.json in Resources */,
 				2E99219D258707DF0004A3C8 /* Bodies.json in Resources */,
 				93775FCF2584EA4100DCD6E4 /* Konata Izumi.json in Resources */,
 				93775FA72584E9F700DCD6E4 /* Goku Super Saiyan.json in Resources */,
