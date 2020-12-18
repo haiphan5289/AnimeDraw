@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "female_anime_eye_primary_light_reflection.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

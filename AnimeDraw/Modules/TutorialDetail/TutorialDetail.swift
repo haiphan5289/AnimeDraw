@@ -100,3 +100,10 @@ extension TutorialDetail: UITableViewDelegate {
     }
     
 }
+extension TutorialDetail: GADAdLoaderDelegate {
+    func adLoader(_ adLoader: GADAdLoader, didFailToReceiveAdWithError error: GADRequestError) {
+        
+    }
+    
+    
+}

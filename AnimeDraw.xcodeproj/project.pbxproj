@@ -23,6 +23,10 @@
 		2E4739E4258B48D000B0180D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E4739E3258B48D000B0180D /* GoogleService-Info.plist */; };
 		2E4916CE258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */; };
 		2E8C6A0A258C55F50057F666 /* AdMobID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C6A09258C55F50057F666 /* AdMobID.swift */; };
+		2E8C6A10258C5DF60057F666 /* Anime Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C6A0F258C5DF60057F666 /* Anime Eyes.json */; };
+		2E8C6A15258C5E4E0057F666 /* How to Draw Female Anime Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C6A14258C5E4E0057F666 /* How to Draw Female Anime Eyes.json */; };
+		2E8C6A1D258C62AE0057F666 /* Sample Female Anime Eye.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C6A1C258C62AE0057F666 /* Sample Female Anime Eye.json */; };
+		2E8C6A22258C67730057F666 /* Sketching Male Anime Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C6A21258C67730057F666 /* Sketching Male Anime Eyes.json */; };
 		2E9921882587045C0004A3C8 /* TutorialDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921862587045C0004A3C8 /* TutorialDetail.swift */; };
 		2E9921892587045C0004A3C8 /* TutorialDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9921872587045C0004A3C8 /* TutorialDetail.xib */; };
 		2E9921932587053A0004A3C8 /* TutorialDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921912587053A0004A3C8 /* TutorialDetailCell.swift */; };
@@ -146,6 +150,10 @@
 		2E4739E3258B48D000B0180D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Drawing Buzz Cut Male Anime Hair.json"; sourceTree = "<group>"; };
 		2E8C6A09258C55F50057F666 /* AdMobID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobID.swift; sourceTree = "<group>"; };
+		2E8C6A0F258C5DF60057F666 /* Anime Eyes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Anime Eyes.json"; sourceTree = "<group>"; };
+		2E8C6A14258C5E4E0057F666 /* How to Draw Female Anime Eyes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Draw Female Anime Eyes.json"; sourceTree = "<group>"; };
+		2E8C6A1C258C62AE0057F666 /* Sample Female Anime Eye.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Sample Female Anime Eye.json"; sourceTree = "<group>"; };
+		2E8C6A21258C67730057F666 /* Sketching Male Anime Eyes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Sketching Male Anime Eyes.json"; sourceTree = "<group>"; };
 		2E9921862587045C0004A3C8 /* TutorialDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetail.swift; sourceTree = "<group>"; };
 		2E9921872587045C0004A3C8 /* TutorialDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialDetail.xib; sourceTree = "<group>"; };
 		2E9921912587053A0004A3C8 /* TutorialDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetailCell.swift; sourceTree = "<group>"; };
@@ -346,6 +354,17 @@
 				2E8C6A09258C55F50057F666 /* AdMobID.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		2E8C6A0E258C5DB60057F666 /* Eyes */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C6A0F258C5DF60057F666 /* Anime Eyes.json */,
+				2E8C6A21258C67730057F666 /* Sketching Male Anime Eyes.json */,
+				2E8C6A1C258C62AE0057F666 /* Sample Female Anime Eye.json */,
+				2E8C6A14258C5E4E0057F666 /* How to Draw Female Anime Eyes.json */,
+			);
+			path = Eyes;
 			sourceTree = "<group>";
 		};
 		2E992185258704350004A3C8 /* TutorialDetail */ = {
@@ -657,6 +676,7 @@
 			isa = PBXGroup;
 			children = (
 				937760132584F38100DCD6E4 /* Tutorials.json */,
+				2E8C6A0E258C5DB60057F666 /* Eyes */,
 				2E99219B258707A40004A3C8 /* Bodies */,
 				2E9921A1258709150004A3C8 /* Chibi Characters */,
 				936E2CB225826301003B634F /* How to Draw Clothes.json */,
@@ -859,6 +879,7 @@
 				93775F932584E9D400DCD6E4 /* Eevee the Pokemon.json in Resources */,
 				93775FCA2584EA3900DCD6E4 /* Kakashi Hatake.json in Resources */,
 				936E2CC225826302003B634F /* How to Draw Hair.json in Resources */,
+				2E8C6A10258C5DF60057F666 /* Anime Eyes.json in Resources */,
 				937760142584F38100DCD6E4 /* Tutorials.json in Resources */,
 				9371E6D6257BA8F000F0A54F /* Assets.xcassets in Resources */,
 				93775F702584E99100DCD6E4 /* Anime girl.json in Resources */,
@@ -877,6 +898,9 @@
 				93775F892584E9C500DCD6E4 /* Detective Conan.json in Resources */,
 				2E4916CE258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json in Resources */,
 				9371E6D1257BA8EE00F0A54F /* Main.storyboard in Resources */,
+				2E8C6A22258C67730057F666 /* Sketching Male Anime Eyes.json in Resources */,
+				2E8C6A15258C5E4E0057F666 /* How to Draw Female Anime Eyes.json in Resources */,
+				2E8C6A1D258C62AE0057F666 /* Sample Female Anime Eye.json in Resources */,
 				2E99220A25874F1B0004A3C8 /* BMStepCell.xib in Resources */,
 				93ACC0A2258322F50066B1E1 /* StepDetail.xib in Resources */,
 				93775FBB2584EA1700DCD6E4 /* Itachi Uchiha.json in Resources */,

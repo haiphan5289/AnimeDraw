@@ -1,0 +1,99 @@
+[
+
+    {
+        "image" : "female_anime_eye_eyelids",
+        "width" : 1242,
+        "height" : 1927,
+    },
+    
+    {
+        "text" : "Start the drawing with the outer shape of the eye. In this case the eyelids/eyelashes.",
+    },
+    
+    {
+        "image" : "female_anime_eye_iris",
+        "width" : 1242,
+        "height" : 1516,
+    },
+    
+    {
+        "text" : "Draw the iris vertically stretched (compared to a real eye). Basically an oval with the top and bottom hidden by the eyelids.",
+    },
+    {
+        "image" : "female_anime_eye_pupil",
+        "width" : 1242,
+        "height" : 899,
+    },
+    
+    {
+        "text" : "Inside the iris draw the pupil tracing the shape of the iris but smaller.",
+    },
+    
+    {
+        "image" : "female_anime_eye_upper_area",
+        "width" : 1242,
+        "height" : 1000,
+    },
+    
+    {
+        "text" : "Make a line towards the upper half of the eye that will indicate the darker area partially created by the shadow and the eyelashes reflecting in the eyes.\nYou can erase the line overlapping the pupil in the next step. The reason for drawing it all the way though like that is to make sure that both sides match up and that you have a nice and smooth curve.",
+    },
+    
+    {
+        "image" : "female_anime_eye_primary_light_reflection",
+        "width" : 1252,
+        "height" : 1669,
+    },
+    
+    {
+        "text" : "Draw the main reflection area from the main light source such as an indoor light bulb, a fire, or the sun. You can erase the area of the pupil and shadow that is overlapped by the reflection.\nThe shape and color of the reflection can depend on the shape and color of the light source. Usually in anime you can simply leave the reflection white and give it a very generalized shape like a circle or an oval.",
+    },
+    
+    {
+        "image" : "female_anime_eye_secondary_light_reflection",
+        "width" : 1242,
+        "height" : 1710,
+    },
+    
+    {
+        "text" : "This reflection will usually come from the light of the main light source bouncing off of a surface and will be smaller than the primary reflection.",
+    },
+    
+    {
+        "image" : "female_anime_eye_shading",
+        "width" : 1191,
+        "height" : 2048,
+    },
+    
+    {
+        "text" : "Finally you can shade the different areas drawn in the previous step. If drawing on paper simply leave the reflections white.\nShade the eyelids which are also technically part of the eyelashes black. Shade the pupil black as well.\nFinally shade the iris grey or any color you want the eyes to have.",
+    },
+    
+    {
+        "image" : "female_anime_eye_top_eyelashes",
+        "width" : 1242,
+        "height" : 752,
+    },
+    
+    {
+        "text" : "It should be noted that you could stop at step seven of this tutorial and have a perfectly normal anime eye but since the tutorial focuses on female eyes we will add some eyelashes.\nThe first place you want to add the eyelashes to is the outer corners of the eye. Generally eyelashes (real eyelashes) sort of fan out around the eyelids so you can draw anime eyelashes in a similar way.\nNext add some smaller eyelashes at the inner corner of the eye.\nSince the eyelashes are fairly small you can also shade them as you draw them.\nThere is no need to add any in the middle as these usually tend to point forward and therefore visually sort of just merge into one shape.",
+    },
+    {
+        "image" : "female_anime_eye_drawing",
+        "width" : 1242,
+        "height" : 752,
+    },
+    
+    {
+        "text" : "Finally add some tiny eyelashes at the outer and inner bottom corners of the eye to have a finished drawing of a female anime eye.",
+    },
+    {
+        "image" : "female_anime_eye_color_drawing",
+        "width" : 1242,
+        "height" : 752,
+    },
+    
+    {
+        "text" : "You can also color the eye instead of just shading it with greys as well as add some gradient.\nFor gradient you can shade the iris to be darker towards it’s outer edges and lighter towards the middle.",
+    }
+]

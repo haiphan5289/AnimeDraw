@@ -11,5 +11,6 @@ class AdModId {
     var bannerID = "ca-app-pub-1498500288840011/7599119385"
     var interstitialID = "ca-app-pub-1498500288840011/5659459552"
     var rewardID = "ca-app-pub-1498500288840011/5116549989"
+    var nativeAdsID = "ca-app-pub-1498500288840011/5183164448"
     
 }
