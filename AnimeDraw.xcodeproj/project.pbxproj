@@ -11,6 +11,8 @@
 		2C6253979ADDFB4D3BFAB4DB /* Pods_AnimeDraw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F024C3140C9F72BE9063FF /* Pods_AnimeDraw.framework */; };
 		2E3B01B625875FDF000B074D /* BMStepByStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B01B425875FDF000B074D /* BMStepByStep.swift */; };
 		2E3B01B725875FDF000B074D /* BMStepByStep.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B01B525875FDF000B074D /* BMStepByStep.xib */; };
+		2E459E54258CB83900B352F1 /* Iron Man in full growth.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E459E53258CB83900B352F1 /* Iron Man in full growth.json */; };
+		2E459E5C258CBB7400B352F1 /* Iron Man Power.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E459E5B258CBB7400B352F1 /* Iron Man Power.json */; };
 		2E47397E258AF27300B0180D /* Naruto.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E47397D258AF27300B0180D /* Naruto.json */; };
 		2E473986258AF95A00B0180D /* Monkey D. Luffy.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E473985258AF95A00B0180D /* Monkey D. Luffy.json */; };
 		2E47398B258AFD0100B0180D /* Roronoa Zoro.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E47398A258AFD0100B0180D /* Roronoa Zoro.json */; };
@@ -138,6 +140,8 @@
 		289A5361AF2796B54835FE39 /* Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig"; path = "Target Support Files/Pods-AnimeDraw-AnimeDrawUITests/Pods-AnimeDraw-AnimeDrawUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E3B01B425875FDF000B074D /* BMStepByStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMStepByStep.swift; sourceTree = "<group>"; };
 		2E3B01B525875FDF000B074D /* BMStepByStep.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BMStepByStep.xib; sourceTree = "<group>"; };
+		2E459E53258CB83900B352F1 /* Iron Man in full growth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Iron Man in full growth.json"; sourceTree = "<group>"; };
+		2E459E5B258CBB7400B352F1 /* Iron Man Power.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Iron Man Power.json"; sourceTree = "<group>"; };
 		2E47397D258AF27300B0180D /* Naruto.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Naruto.json; sourceTree = "<group>"; };
 		2E473985258AF95A00B0180D /* Monkey D. Luffy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Monkey D. Luffy.json"; sourceTree = "<group>"; };
 		2E47398A258AFD0100B0180D /* Roronoa Zoro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Roronoa Zoro.json"; sourceTree = "<group>"; };
@@ -301,6 +305,15 @@
 			path = StepByStep;
 			sourceTree = "<group>";
 		};
+		2E459E4F258CB6C800B352F1 /* IRon Man */ = {
+			isa = PBXGroup;
+			children = (
+				2E459E5B258CBB7400B352F1 /* Iron Man Power.json */,
+				2E459E53258CB83900B352F1 /* Iron Man in full growth.json */,
+			);
+			path = "IRon Man";
+			sourceTree = "<group>";
+		};
 		2E473999258B193600B0180D /* One Piece */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +339,7 @@
 		2E4739AE258B357C00B0180D /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				2E459E4F258CB6C800B352F1 /* IRon Man */,
 				2E4739B8258B381300B0180D /* Spider Man */,
 				2E4739AF258B35F100B0180D /* Captain Marvel */,
 			);
@@ -871,6 +885,7 @@
 				93775FA22584E9F000DCD6E4 /* Gohan.json in Resources */,
 				93775FC02584EA1E00DCD6E4 /* Kagami Hiiragi.json in Resources */,
 				9371E777257BB50D00F0A54F /* StepCell.xib in Resources */,
+				2E459E54258CB83900B352F1 /* Iron Man in full growth.json in Resources */,
 				936E2CC125826302003B634F /* How to Draw Male Body.json in Resources */,
 				2E4739A5258B2E5C00B0180D /* Bulma.json in Resources */,
 				936E2CB825826302003B634F /* How to Draw Male Eyes.json in Resources */,
@@ -908,6 +923,7 @@
 				936E2CBB25826302003B634F /* How to Draw Female Eyes.json in Resources */,
 				93775FB12584EA0600DCD6E4 /* Hello Kitty.json in Resources */,
 				93775FD92584EA5100DCD6E4 /* Link from Legend of Zelda.json in Resources */,
+				2E459E5C258CBB7400B352F1 /* Iron Man Power.json in Resources */,
 				2E9921B025870B950004A3C8 /* DisplayTutorialVC.xib in Resources */,
 				2E4739E4258B48D000B0180D /* GoogleService-Info.plist in Resources */,
 				936E2CBE25826302003B634F /* How to Draw Clothes.json in Resources */,
