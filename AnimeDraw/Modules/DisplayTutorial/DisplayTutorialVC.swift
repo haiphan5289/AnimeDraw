@@ -8,13 +8,29 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import GoogleMobileAds
 
-class DisplayTutorialVC: UIViewController {
+class DisplayTutorialVC: UIViewController, GADRewardedAdDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     var anime: StepModel?
     @VariableReplay private var listImage: [DisplayTutorialModel] = []
     @VariableReplay private var listTutorialRealm: [StepModel] = []
+    private let banner: GADBannerView = {
+       let b = GADBannerView()
+        //source
+//        ca-app-pub-3940256099942544/2934735716
+        //drawanime
+        //ca-app-pub-1498500288840011/7599119385
+        //ca-app-pub-1498500288840011/7599119385
+        b.adUnitID = AdModId.share.bannerID
+        b.load(GADRequest())
+        b.adSize = kGADAdSizeSmartBannerPortrait
+        b.backgroundColor = .secondarySystemBackground
+        return b
+    }()
+    private var interstitial: GADInterstitial!
+    private var rewardedAd: GADRewardedAd?
     private let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +81,15 @@ extension DisplayTutorialVC {
                 btPlus.isHidden = true
             }
         }.disposed(by: disposeBag)
+        
+        banner.rootViewController = self
+        self.view.addSubview(banner)
+        banner.snp.makeConstraints { (make) in
+            make.left.right.equalToSuperview()
+            make.height.equalTo(50)
+            make.width.equalToSuperview()
+            make.bottom.equalTo(self.view.safeAreaLayoutGuide)
+        }
     }
     private func setupRX() {
         self.$listImage.asObservable()
@@ -83,6 +108,17 @@ extension DisplayTutorialVC {
                 } else {
                     cell.img.isHidden = true
                     cell.hImage.constant = 0
+                }
+                
+                if row == 4 {
+                    self.interstitial = GADInterstitial(adUnitID: AdModId.share.interstitialID)
+                    let request = GADRequest()
+                    self.interstitial.load(request)
+                    self.interstitial.delegate = self
+                }
+                
+                if row == self.listImage.count - 1 {
+                    self.rewardedAd?.present(fromRootViewController: self, delegate: self)
                 }
         }.disposed(by: disposeBag)
         
@@ -116,3 +152,26 @@ extension DisplayTutorialVC: UITableViewDelegate {
     
 }
 
+extension DisplayTutorialVC: GADInterstitialDelegate {
+    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
+        interstitial.present(fromRootViewController: self)
+    }
+}
+extension DisplayTutorialVC {
+    /// Tells the delegate that the user earned a reward.
+    func rewardedAd(_ rewardedAd: GADRewardedAd, userDidEarn reward: GADAdReward) {
+      print("Reward received with currency: \(reward.type), amount \(reward.amount).")
+    }
+    /// Tells the delegate that the rewarded ad was presented.
+    func rewardedAdDidPresent(_ rewardedAd: GADRewardedAd) {
+      print("Rewarded ad presented.")
+    }
+    /// Tells the delegate that the rewarded ad was dismissed.
+    func rewardedAdDidDismiss(_ rewardedAd: GADRewardedAd) {
+      print("Rewarded ad dismissed.")
+    }
+    /// Tells the delegate that the rewarded ad failed to present.
+    func rewardedAd(_ rewardedAd: GADRewardedAd, didFailToPresentWithError error: Error) {
+      print("Rewarded ad failed to present.")
+    }
+}

@@ -29,10 +29,10 @@ class StepByStepVC: UIViewController {
         //drawanime
         //ca-app-pub-1498500288840011/7599119385
         //ca-app-pub-1498500288840011/7599119385
-        b.adUnitID = "ca-app-pub-1498500288840011/7599119385"
+        b.adUnitID = AdModId.share.bannerID
         b.load(GADRequest())
         b.adSize = kGADAdSizeSmartBannerPortrait
-//        b.backgroundColor = .secondarySystemBackground
+        b.backgroundColor = .secondarySystemBackground
         return b
     }()
     @VariableReplay private var listAnime: [StepModel] = []

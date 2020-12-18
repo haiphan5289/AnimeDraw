@@ -8,15 +8,37 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import GoogleMobileAds
 
 class TutorialDetail: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var titleTutorial: String = ""
     @VariableReplay private var listImage: [StepModel] = []
+    private let banner: GADBannerView = {
+       let b = GADBannerView()
+        //source
+//        ca-app-pub-3940256099942544/2934735716
+        //drawanime
+        //ca-app-pub-1498500288840011/7599119385
+        //ca-app-pub-1498500288840011/7599119385
+        b.adUnitID = AdModId.share.bannerID
+        b.load(GADRequest())
+        b.adSize = kGADAdSizeSmartBannerPortrait
+        b.backgroundColor = .secondarySystemBackground
+        return b
+    }()
     private let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
+        banner.rootViewController = self
+        self.view.addSubview(banner)
+        banner.snp.makeConstraints { (make) in
+            make.left.right.equalToSuperview()
+            make.height.equalTo(50)
+            make.width.equalToSuperview()
+            make.bottom.equalTo(self.view.safeAreaLayoutGuide)
+        }
         self.visualize()
         self.setupRX()
     }
@@ -35,6 +57,7 @@ extension TutorialDetail {
         self.navigationItem.title = self.titleTutorial
         tableView.delegate = self
         tableView.register(TutorialDetailCell.nib, forCellReuseIdentifier: TutorialDetailCell.identifier)
+        
     }
     private func setupRX() {
         self.$listImage.asObservable()

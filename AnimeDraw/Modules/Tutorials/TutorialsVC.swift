@@ -12,11 +12,25 @@ import RxCocoa
 import DZNEmptyDataSet
 import ViewAnimator
 import SnapKit
+import GoogleMobileAds
 
 class TutorialsVC: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @VariableReplay private var listAnime: [StepModel] = []
+    private let banner: GADBannerView = {
+       let b = GADBannerView()
+        //source
+//        ca-app-pub-3940256099942544/2934735716
+        //drawanime
+        //ca-app-pub-1498500288840011/7599119385
+        //ca-app-pub-1498500288840011/7599119385
+        b.adUnitID = "ca-app-pub-1498500288840011/7599119385"
+        b.load(GADRequest())
+        b.adSize = kGADAdSizeSmartBannerPortrait
+        b.backgroundColor = .secondarySystemBackground
+        return b
+    }()
     private let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +57,15 @@ extension TutorialsVC {
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         title = "Tutorials"
         self.navigationItem.title = "Tutorials"
+        
+        banner.rootViewController = self
+        self.view.addSubview(banner)
+        banner.snp.makeConstraints { (make) in
+            make.left.right.equalToSuperview()
+            make.height.equalTo(50)
+            make.width.equalToSuperview()
+            make.bottom.equalTo(self.view.safeAreaLayoutGuide)
+        }
     }
     private func setupRX() {
         self.$listAnime.asObservable()

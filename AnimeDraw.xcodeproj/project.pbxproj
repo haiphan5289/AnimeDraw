@@ -22,6 +22,7 @@
 		2E4739BD258B394B00B0180D /* Spider Man.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4739BC258B394B00B0180D /* Spider Man.json */; };
 		2E4739E4258B48D000B0180D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E4739E3258B48D000B0180D /* GoogleService-Info.plist */; };
 		2E4916CE258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */; };
+		2E8C6A0A258C55F50057F666 /* AdMobID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C6A09258C55F50057F666 /* AdMobID.swift */; };
 		2E9921882587045C0004A3C8 /* TutorialDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921862587045C0004A3C8 /* TutorialDetail.swift */; };
 		2E9921892587045C0004A3C8 /* TutorialDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E9921872587045C0004A3C8 /* TutorialDetail.xib */; };
 		2E9921932587053A0004A3C8 /* TutorialDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9921912587053A0004A3C8 /* TutorialDetailCell.swift */; };
@@ -144,6 +145,7 @@
 		2E4739BC258B394B00B0180D /* Spider Man.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Spider Man.json"; sourceTree = "<group>"; };
 		2E4739E3258B48D000B0180D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2E4916CD258A0A0100123011 /* How to Drawing Buzz Cut Male Anime Hair.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "How to Drawing Buzz Cut Male Anime Hair.json"; sourceTree = "<group>"; };
+		2E8C6A09258C55F50057F666 /* AdMobID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobID.swift; sourceTree = "<group>"; };
 		2E9921862587045C0004A3C8 /* TutorialDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetail.swift; sourceTree = "<group>"; };
 		2E9921872587045C0004A3C8 /* TutorialDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialDetail.xib; sourceTree = "<group>"; };
 		2E9921912587053A0004A3C8 /* TutorialDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialDetailCell.swift; sourceTree = "<group>"; };
@@ -338,6 +340,14 @@
 			path = "Spider Man";
 			sourceTree = "<group>";
 		};
+		2E8C6A08258C55D70057F666 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C6A09258C55F50057F666 /* AdMobID.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		2E992185258704350004A3C8 /* TutorialDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -487,6 +497,7 @@
 		9371E6C8257BA8EE00F0A54F /* AnimeDraw */ = {
 			isa = PBXGroup;
 			children = (
+				2E8C6A08258C55D70057F666 /* Constant */,
 				936E2CAB258262F1003B634F /* JSON */,
 				93ACC02725830AE80066B1E1 /* Service */,
 				9371E747257BAD4100F0A54F /* Extension */,
@@ -1067,6 +1078,7 @@
 				2E9921C125870EB90004A3C8 /* DisplayTutorialModel.swift in Sources */,
 				93ACC0A1258322F50066B1E1 /* StepDetail.swift in Sources */,
 				93ACC03225830DF40066B1E1 /* StepModel.swift in Sources */,
+				2E8C6A0A258C55F50057F666 /* AdMobID.swift in Sources */,
 				9371E6D4257BA8EE00F0A54F /* AnimeDraw.xcdatamodeld in Sources */,
 				9371E749257BAD6800F0A54F /* ViewController+Extension.swift in Sources */,
 				9371E6CC257BA8EE00F0A54F /* SceneDelegate.swift in Sources */,

@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pj6-uC-o3o">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="675"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Bkm-k0-5I9">
                                     <size key="itemSize" width="128" height="128"/>
@@ -34,7 +34,7 @@
                         <constraints>
                             <constraint firstItem="Pj6-uC-o3o" firstAttribute="top" secondItem="9be-ZY-bbW" secondAttribute="top" id="V9e-MF-t5h"/>
                             <constraint firstItem="9be-ZY-bbW" firstAttribute="trailing" secondItem="Pj6-uC-o3o" secondAttribute="trailing" id="auQ-yR-yna"/>
-                            <constraint firstAttribute="bottom" secondItem="Pj6-uC-o3o" secondAttribute="bottom" id="jeN-0H-ah4"/>
+                            <constraint firstItem="9be-ZY-bbW" firstAttribute="bottom" secondItem="Pj6-uC-o3o" secondAttribute="bottom" constant="50" id="jeN-0H-ah4"/>
                             <constraint firstItem="Pj6-uC-o3o" firstAttribute="leading" secondItem="ck3-Jw-Oqz" secondAttribute="leading" id="mrp-OS-8Ls"/>
                         </constraints>
                     </view>
@@ -56,14 +56,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="L9y-X2-QaS">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="675"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nvL-D4-QeT"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nvL-D4-QeT" firstAttribute="bottom" secondItem="L9y-X2-QaS" secondAttribute="bottom" id="1dL-gq-wTQ"/>
+                            <constraint firstItem="nvL-D4-QeT" firstAttribute="bottom" secondItem="L9y-X2-QaS" secondAttribute="bottom" constant="50" id="1dL-gq-wTQ"/>
                             <constraint firstItem="L9y-X2-QaS" firstAttribute="leading" secondItem="nvL-D4-QeT" secondAttribute="leading" id="1ib-E5-WPd"/>
                             <constraint firstItem="nvL-D4-QeT" firstAttribute="trailing" secondItem="L9y-X2-QaS" secondAttribute="trailing" id="KWb-mD-vPw"/>
                             <constraint firstItem="L9y-X2-QaS" firstAttribute="top" secondItem="nvL-D4-QeT" secondAttribute="top" id="vdm-5s-FKH"/>

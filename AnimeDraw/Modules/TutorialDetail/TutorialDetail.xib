@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="UVf-LZ-Z2K">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="686"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                 </tableView>
@@ -28,7 +29,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UVf-LZ-Z2K" secondAttribute="bottom" id="BM8-79-2wP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UVf-LZ-Z2K" secondAttribute="bottom" constant="50" id="BM8-79-2wP"/>
                 <constraint firstItem="UVf-LZ-Z2K" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Iab-8x-KIK"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UVf-LZ-Z2K" secondAttribute="trailing" id="mAm-ee-oBx"/>
                 <constraint firstItem="UVf-LZ-Z2K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mEe-tx-Uvi"/>

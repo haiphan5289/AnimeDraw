@@ -10,13 +10,16 @@ import RxCocoa
 import RxSwift
 import Kingfisher
 import AnimatedCollectionViewLayout
+import GoogleMobileAds
 
-class StepDetail: UIViewController {
+class StepDetail: UIViewController, GADRewardedAdDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     @VariableReplay private var listAnime: [StepModel] = []
     @VariableReplay private var listStep: [StepModel] = []
+    private var interstitial: GADInterstitial!
+    private var rewardedAd: GADRewardedAd?
     private let disposeBag = DisposeBag()
     var anime: StepModel?
     override func viewDidLoad() {
@@ -72,6 +75,20 @@ extension StepDetail {
                 btPlus.isHidden = true
             }
         }.disposed(by: disposeBag)
+        
+        rewardedAd = GADRewardedAd(adUnitID: AdModId.share.rewardID)
+        rewardedAd?.load(GADRequest()) { error in
+              if let error = error {
+                // Handle ad failed to load case.
+                
+              } else {
+                // Ad successfully loaded.
+              }
+            }
+//        if rewardedAd?.isReady == true {
+//               rewardedAd?.present(fromRootViewController: self, delegate:self)
+//            }
+        
     }
     private func setupRX() {
         self.$listAnime.asObservable()
@@ -87,6 +104,16 @@ extension StepDetail {
                 cell.lbTitle.attributedText = attributedString1
                 cell.img.image = UIImage(named: data.image ?? "")
                 cell.hTitle.constant = (data.text ?? "").getTextSizeNoteView(fontSize: 15, width: self.view.bounds.width, height: 1000).height + 50
+                if row == 4 {
+                    self.interstitial = GADInterstitial(adUnitID: AdModId.share.interstitialID)
+                    let request = GADRequest()
+                    self.interstitial.load(request)
+                    self.interstitial.delegate = self
+                }
+                
+                if row == self.listAnime.count - 1 {
+                    self.rewardedAd?.present(fromRootViewController: self, delegate: self)
+                }
             }.disposed(by: disposeBag)
         
         guard let title = self.anime?.text else {
@@ -125,4 +152,27 @@ extension StepDetail: UICollectionViewDelegate, UICollectionViewDelegateFlowLayo
         self.pageControl.currentPage = indexPath.row
     }
 
+}
+extension StepDetail: GADInterstitialDelegate {
+    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
+        interstitial.present(fromRootViewController: self)
+    }
+}
+extension StepDetail {
+    /// Tells the delegate that the user earned a reward.
+    func rewardedAd(_ rewardedAd: GADRewardedAd, userDidEarn reward: GADAdReward) {
+      print("Reward received with currency: \(reward.type), amount \(reward.amount).")
+    }
+    /// Tells the delegate that the rewarded ad was presented.
+    func rewardedAdDidPresent(_ rewardedAd: GADRewardedAd) {
+      print("Rewarded ad presented.")
+    }
+    /// Tells the delegate that the rewarded ad was dismissed.
+    func rewardedAdDidDismiss(_ rewardedAd: GADRewardedAd) {
+      print("Rewarded ad dismissed.")
+    }
+    /// Tells the delegate that the rewarded ad failed to present.
+    func rewardedAd(_ rewardedAd: GADRewardedAd, didFailToPresentWithError error: Error) {
+      print("Rewarded ad failed to present.")
+    }
 }
