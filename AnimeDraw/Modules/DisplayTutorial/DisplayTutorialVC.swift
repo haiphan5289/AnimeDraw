@@ -82,14 +82,14 @@ extension DisplayTutorialVC {
             }
         }.disposed(by: disposeBag)
         
-        banner.rootViewController = self
-        self.view.addSubview(banner)
-        banner.snp.makeConstraints { (make) in
-            make.left.right.equalToSuperview()
-            make.height.equalTo(50)
-            make.width.equalToSuperview()
-            make.bottom.equalTo(self.view.safeAreaLayoutGuide)
-        }
+//        banner.rootViewController = self
+//        self.view.addSubview(banner)
+//        banner.snp.makeConstraints { (make) in
+//            make.left.right.equalToSuperview()
+//            make.height.equalTo(50)
+//            make.width.equalToSuperview()
+//            make.bottom.equalTo(self.view.safeAreaLayoutGuide)
+//        }
     }
     private func setupRX() {
         self.$listImage.asObservable()

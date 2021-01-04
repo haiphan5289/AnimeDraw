@@ -31,14 +31,14 @@ class TutorialDetail: UIViewController {
     private let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        banner.rootViewController = self
-        self.view.addSubview(banner)
-        banner.snp.makeConstraints { (make) in
-            make.left.right.equalToSuperview()
-            make.height.equalTo(50)
-            make.width.equalToSuperview()
-            make.bottom.equalTo(self.view.safeAreaLayoutGuide)
-        }
+//        banner.rootViewController = self
+//        self.view.addSubview(banner)
+//        banner.snp.makeConstraints { (make) in
+//            make.left.right.equalToSuperview()
+//            make.height.equalTo(50)
+//            make.width.equalToSuperview()
+//            make.bottom.equalTo(self.view.safeAreaLayoutGuide)
+//        }
         self.visualize()
         self.setupRX()
     }
